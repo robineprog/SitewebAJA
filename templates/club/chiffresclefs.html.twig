@@ -1,0 +1,145 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HistoriqueController!{% endblock %}
+
+{% block body %}
+<style>
+
+@media screen and (max-width: 100000px) {
+  .logoaja {
+    position: absolute;
+    left: -999em;
+  }
+}
+</style>
+
+<div class="container-fluid" style="  background-repeat: no-repeat; background-attachment: ; background-size: cover; background-image: linear-gradient(rgba(51, 103, 214, 0.9), rgba(0, 0, 0, 0.70)), url('https://images.pexels.com/photos/5094997/pexels-photo-5094997.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">  
+    <div class="row d-flex d-flex justify-content-center">
+        <img class="img-fluid "src="https://i.ibb.co/kXP0tB4/Logoajatri.png" alt="Logoajatri" style="max-height: 30rem; width: auto;">
+    </div>
+
+    <div class="row d-flex ">
+        <h2 class="text-white text-center display-2">LES CHIFFRES CLÉS</h2>
+    </div>
+
+
+    <div class="container">
+        <div class="row d-flex flex-row bg-white mb-4">
+            <h2 style="col-md-6or:rgb(51, 103, 214);"class=" text-center display-3 p-4">CREATION 1988</h2>
+        </div>
+
+        <div class="row d-flex flex-row">
+
+            <div class="col-md-6 d-flex justify-content-start " >
+                <h2 class="pt-5 d-flex text-white text-center display-6" style="padding-left: 3em;" >51<br>ADHÉRENTS <i class="d-flex text-white fas fa-users fa-2x pt-2 ps-5 "></i></h2>
+            </div>
+
+
+
+            <div class="col-md-6 d-flex justify-content-start ">
+                <h2 class="p-4 d-flex text-white text-center display-6 "><span>39% FEMMES<br><i class="fas fa-female  fa-2x p-2 "></i> </span>
+                <span><br><i class="fas fa-male p-2 fa-2x "></i><br>61% HOMMES</span></h2>
+            </div>
+
+        </div>
+
+
+        <div class="row d-flex flex-row ">
+
+            <div class="col-md-6 d-flex justify-content-start " >
+                <h2 class="p-5 d-flex bg-white text-center" style="font-size: 1.7rem; width: 100%;">JEUNES 19 ans & - 13%<br>
+                SENIORS 20 ans - 39 ans 20% <br>
+                MASTERS 40 ans & + 67%<br>
+                <i class="fas fa-percentage fa-3x pt-3 ps-5"></i></h2>
+            </div>
+
+
+
+            <div class="col-md-6 d-flex justify-content-start " >
+                <h2 class="p-4 pt-5 d-flex bg-white text-center display-6" style="width: 100%; padding-left: 3em!important;">6 PÔLES D'ACTIVITÉS<i class="fas fa-chart-line fa-2x pt-3 pe-5"></i></h2>
+            </div>
+
+        </div>
+
+        <div class="row d-flex flex-row ">
+
+            <div class="col-md-6 d-flex justify-content-start pb-5">
+                <h2 class="p-4 d-flex text-white text-center display-6 "style="width: 100%;"><span class="pt-5">12K€
+                BUDGET
+                ANNUEL </span><i class="fas fa-hand-holding-usd fa-2x pt-5 ps-5"></i></i></h2>
+            </div>
+
+
+
+            <div class="col-md-6 d-flex justify-content-start ">
+                <h2 class="p-4 d-flex text-white text-center display-6 "style="width: 100%;"><p style="padding-top: 3rem;">7
+                REGROUPEMENTS
+                AMICAUX / AN</p><i class="fas fa-universal-access fa-2x pt-5 ps-5"></i></h2>
+            </div>
+
+        </div>
+
+        <div class="row d-flex flex-row">
+
+            <div class="col-md-6 d-flex justify-content-start " >
+                <h2 class="p-4 pt-5 d-flex bg-white text-center display-6 "style="width: 100%;">4
+                ENTRAINEMENTS
+                COMMUNS
+                HEBDOMADAIRES  <i class="fas fa-swimmer fa-2x pt-5 ps-5"></i></h2>
+            </div>
+
+
+            <div class="col-md-6 d-flex justify-content-start " >
+                <h2 class="p-4 d-flex bg-white text-center display-6"><p style="padding-top:3rem;">1
+                CALENDRIER
+                SPORTIF
+                ANNUEL</p><i class="fas fa-calendar-alt fa-2x pt-5 ps-5"></i></h2>
+            </div>
+
+        </div>
+
+        <div class="row d-flex flex-row">
+
+            <div class="col-md-6 d-flex justify-content-start ">
+                <h2 class="p-4 d-flex text-white text-center display-6 ">51<br> 
+                1
+                UNE COMPÉTITION
+                LOCALE / AN <i class="fas fa-map-marker-alt fa-2x pt-5 ps-5"></i></h2>
+            </div>
+
+
+
+            <div class="col-md-6 d-flex justify-content-start ">
+                <h2 class="p-4 d-flex text-white text-center display-6 "><p style="padding-top:3rem;">1
+                BOUTIQUE
+                CLUB</p><i class="fas fa-store fa-2x pt-5 ps-5"></i></h2>
+            </div>
+
+        </div>
+
+        <div class="row d-flex flex-row">
+
+            <div class="col-md-6 d-flex justify-content-start " >
+                <h2 class="p-5 d-flex justify-content-around bg-white text-center display-6 " style="width: 100%;"><i class="fab fa-instagram fa-2x"></i><i class="fab fa-facebook-square fa-2x"></i><i class="fab fa-internet-explorer fa-2x"></i></h2>
+            </div>
+
+
+
+            <div class="col-md-6 d-flex justify-content-start " >
+                <h2 class="p-4 d-flex bg-white text-center display-6"><p style="padding-top: 2rem;">100%
+                DE BONNE
+                HUMEUR </p><i class="far fa-smile-beam fa-2x pt-4 ps-5 pe-5"></i></h2>
+            </div>
+
+            </div>
+
+    </div>
+
+    <div class="row d-flex flex-row">
+    <h2 style="color :rgb(255,255,255);" class="text-center display-5 ">ajatriathlonauxerre@gmail.com</h2>
+    </div>
+
+</div>
+
+
+{% endblock %}

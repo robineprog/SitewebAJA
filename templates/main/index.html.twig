@@ -1,0 +1,553 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+    {% for message in app.flashes('success') %}
+    <div class="alert alert-success" role="alert">{{ message }}</div>
+{% endfor %}
+
+<!-- Background image banniere -->
+
+
+<body>
+<div class="container-fluid p-0 m-0 d-flex align-items-end background-image" style="background: url(https://images.pexels.com/photos/5687405/pexels-photo-5687405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center fixed; height: 31rem; max-width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;" >
+
+  <div class="row d-flex justify-content-center p-0 m-0" style="background : rgba(255,255,255,0.7) ;bottom: 0; width:100%;">
+    <div class="d-flex col ps-5"><h2 class="text-white"style="
+    text-transform: uppercase;
+  background-color: #3576B7;
+  padding: 8px 12px;
+  color: #000;
+  position: absolute; 
+  top: 62%;
+  font-size: 1.5rem;font-weight: 800;">BIENVENUE</h2></div>
+    <h2 class="p-5 m-0 text-uppercase" style="font-size: 2rem; font-weight: 800; color:black;">L’AJ AUXERRE<br>(Association de la Jeunesse Auxerroise)</h2>
+  </div>
+
+</div>
+
+<!-- -->
+
+<div class="pt-4 pb-4 pe-5 ps-2 text-white " style="background: linear-gradient(#3f90cb,#345fa5);">
+  <div class="col-md-6 px-0 text-start">
+    <h1 class="p-1" style="font-size: 1.125rem;font-weight: 800;"> LE MOT DES PRÉSIDENTS</h1>
+  </div>
+</div>
+
+<!-- Mot des présidents -->
+<div class="container-fluid" style="background-color:
+rgba(232,240,247,1);">
+  <div class="row d-flex justify-content-center  p-0 m-O">
+
+      <div class="col-md-8 p-5" data-aos="fade-top" data-aos-duration="3000" style="padding-left: 10rem;">
+        <h2 class="text-center pb-5 text-uppercase" style="color: #3576b7; font-size:2rem; font-weight: 800;">Quelques mots des présidents</h2>
+        <p class=" text-justify" style="font-weight: 800; font-size: 1.125rem; color: black;">Chère adhérente, cher adhérent,</p>
+        <p style="font-size: 1rem; color: black; "><br>Le club de <span class="text-uppercase" style="color: #3576b7; font-size:1rem; font-weight: 800;">« lʼAJA Triathlon »</span> est une section sportive de lʼAJA Omnisport dont lʼobjectif
+        est la pratique du triathlon dans une ambiance conviviale et sportive. </p>
+        <p class="text-justify" style="font-size: 1rem; color: black;">Que ce soit en mode loisir ou compétition, notre volonté est de partager les valeurs de la multi-discipline et du sport en général : lʼépanouissement, la convivialité, le
+        dépassement de soi, le respect de lʼautre et lʼesprit de groupe.<br><br> Le principe du club repose sur lʼengagement de chacun à partager ces valeurs pour faire
+        vivre le club.
+        <br><br><h2 class="text-uppercase text-center" style="color: #3576b7; font-size:1rem; font-weight: 800;">Bonne saison à tous.</h2> </p>
+      </div>
+      <div class="col-md-4 d-flex justify-content-end"  data-aos="fade-top" data-aos-duration="3000">
+     <img class="img-fluid text-end" src="https://i.ibb.co/2WcKPFq/Photo-Room-20201201-204202.png" alt="Photo-Room-20201201-204202" style="max-width: 24rem; height: auto;">
+      </div>
+    </div>   
+</div>
+<!-- -->
+
+
+<!--Banniere Actu-->
+<div class="pt-4 pb-4 pe-5 ps-2 text-white " style="background: linear-gradient(#3f90cb,#345fa5);">
+  <div class="col-md-6 px-0 text-start">
+    <h1 class="p-1 text-uppercase" style="font-size: 1.125rem;font-weight: 800;"> Actualités</h1>
+  </div>
+</div>
+<!---->
+
+
+<!--Actus-->
+<div class="container-fluid" style="background-color:rgba(51, 103, 214, 0.15);">
+  <div class="row ps-5 pe-5 pt-5 pb-5">
+  <div class="ps-5">
+    <div style="border-top: 3px solid #3576b7; max-width : 4rem;"></div>
+  <h2 class="text-start text-uppercase pt-3 pb-3" style="font-size: 1.125rem;font-weight: 800; color: #3576b7;">ACTUALITÉS DE L'AJ AUXERRE</h2></div>
+
+  {% for articles in articles %}
+    <div class="col-md-4 ps-5 pe-5 pt-1">
+
+      <div class="card" data-aos="fade-bot" data-aos-duration="1000" style="height: 24rem; background-color: white; 	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
+border-radius: 0;">
+      {% for image in articles.images %}
+        <div class="bg-image hover-overlay ripple img-fluid" data-mdb-ripple-color="light" style="height: 200px; background :url('{{ asset('/uploads/'~image.name) }}')  no-repeat center center; object-fit: ">
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"><div class="d-flex justify-content-start align-items-start ">
+       <h4 class=" text-white text-uppercase ps-2 pt-1 pe-2 pb-1 font-weight-bold" style="background: linear-gradient(#3f90cb,#345fa5);">{{ articles.categorie }}</h4>
+    </div></div>
+            </a>
+        </div>
+        {% endfor %}
+        <div class="card-body text-center" style="height: 200px;">
+          <h5 class="card-title" style="color: #3576b7; font-size: 1.125rem; font-weight: 800;">{{ articles.titre }}</h5>
+          <p class="card-text" style="max-width: 100rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{{ articles.contenu }}</p>
+          <a href="{{ path('bureau1') }}" class="btn btn-white">Voir les articles Bureau</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    {% for articles2 in articles2 %}
+    <div class="col-md-4 ps-5 pe-5 pt-1">
+
+      <div class="card" data-aos="fade-bot" data-aos-duration="1000" style="height: 24rem; background-color: white; 	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
+border-radius: 0;">
+      {% for image in articles2.images %}
+        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light" style="height: 200px; background :url('{{ asset('/uploads/'~image.name) }}') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"><div class="d-flex justify-content-start align-items-start ">
+      <h4 class="text-white text-uppercase ps-2 pt-1 pe-2 pb-1 font-weight-bold " style="background: linear-gradient(#3f90cb,#345fa5);">{{ articles2.categorie }}</h4>
+    </div></div>
+            </a>
+        </div>
+        {% endfor %}
+        <div class="card-body text-center" style="height: 200px;">
+          <h5 class="card-title" style="color: #3576b7; font-size: 1.125rem; font-weight: 800;">{{ articles2.titre }}</h5>
+          <p class="card-text" style="max-width: 100rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{{ articles2.contenu }}</p>
+          <a href="{{ path('sport1') }}" class="btn btn-white">Voir les articles Sport</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    {% for articles3 in articles3 %}
+    <div class="col-md-4 ps-5 pe-5 pt-1">
+
+      <div class="card" data-aos="fade-bot" data-aos-duration="1000" style="height: 24rem; background-color: white; 	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
+border-radius: 0;">
+      {% for image in articles3.images %}
+        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light" style="height: 200px; background :url('{{ asset('/uploads/'~image.name) }}')  no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"><div class="d-flex justify-content-start align-items-start ">
+       <h4 class="text-white text-uppercase ps-2 pt-1 pe-2 pb-1 font-weight-bold" style="background: linear-gradient(#3f90cb,#345fa5);">{{ articles3.categorie }}</h4>
+    </div></div>
+            </a>
+        </div>
+        {% endfor %}
+        <div class="card-body text-center" style="height: 200px;">
+          <h5 class="card-title" style="color: #3576b7; font-size: 1.125rem; font-weight: 800;">{{ articles3.titre }}</h5>
+          <p class="card-text" style="max-width: 100rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;"> {{ articles3.contenu }}</p>
+          <a href="{{ path('boutique1') }}"class="btn btn-white">Voir les articles Boutique</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+</div>  
+</div>
+<!---->
+
+<!--Banniere Activités-
+<div class="pt-4 pb-4 pe-5 ps-2 text-white " style="background: linear-gradient(#3f90cb,#345fa5);">
+  <div class="col-md-6 px-0 text-start">
+    <h1 class="p-1 text-uppercase" style="font-size: 1.125rem; font-weight: 800;"> Activités</h1>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="container-fluid d-flex justify-content-center flex-column p-5" style="background-color:rgba(51, 103, 214, 0.2); ">
+  <div class="container  bg-whit "style="border: 1rem solid, rgb(51, 103, 214)!important, rounded;" data-aos="" data-aos-duration="1000">
+    <div class="row " >
+      <div class="d-flex flex-column bg-im p-5 border border-white border-3"  style="object-fit: cover; background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url('https://images.pexels.com/photos/5094957/pexels-photo-5094957.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+       <div class="">
+          <span class="text-uppercase p-3" style="color: #3576b7; background: rgba(255,255,255,0.9); font-size:2rem">Triathlon |<span style="color: black"> Natation / vélo / course à pied</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container pt-5 pb-5" data-aos="" data-aos-duration="1000">
+    <div class="row">
+      <div class="bg-img p-5 border border-white border-3 d-flex flex-column text-end  " style=" background-position: right 0% bottom 80%; background-repeat: no-repeat; background-size: cover; background-image: url('https://images.pexels.com/photos/5655114/pexels-photo-5655114.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+         <div class="">
+         <span class="text-uppercase p-3" style="color: #3576b7; background: rgba(255,255,255,0.9); font-size:2rem">Aquathlon |<span style="color: black"> Natation / course à pied</span></span>
+        </div>
+      </div>     
+    </div>
+  </div>
+  <div class="container" data-aos="" data-aos-duration="1000">
+    <div class="row">
+      <div class="d-flex flex-column bg-im p-5 border border-white border-3" style="background-position: right 0% bottom 80%; background-repeat: no-repeat; background-size: cover; background-image: url('https://images.pexels.com/photos/5687404/pexels-photo-5687404.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')";>
+       <div class="">
+       <span class="text-uppercase p-3" style="color: #3576b7; background: rgba(255,255,255,0.9); font-size:2rem">Duathlon |<span style="color: black"> Course à pied / vélo / course à pied</span></span>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+-->
+
+
+<!--Banniere Media-->
+<div class="pt-4 pb-4 pe-5 ps-2 text-white " style="background: linear-gradient(#3f90cb,#345fa5);">
+  <div class="col-md-6 px-0 text-start">
+    <h1 class="p-1 text-uppercase" style="font-size: 1.125rem; font-weight: 800;"> Média</h1>
+  </div>
+</div>
+
+<!---->
+<style>
+a{
+  text-decoration: none;
+  color: #3576b7;
+}
+
+.underline{
+  position: relative;
+}
+
+.underline::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3576b7;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .underline:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+</style>
+<!--Media-->
+<div class="container-fluid p-5 mb-2">
+  <div class="row text-start pb-3">
+   <div class="col-6"><a class="underline" href="{{ path('photo') }}" style="color: #3576b7; font-weight: 800; font-size:2rem; text-uppercase">Photos</a></div>
+   <div class="col-6"><a class="underline" href="{{ path('video') }}" style="color: #3576b7; font-weight: 800; font-size:2rem; text-uppercase">Vidéos</a></div>
+  </div>
+  <div class="row">
+    <div class="col-6 d-flex flex-column justify-content-around ">
+      <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://i.ibb.co/Pj6Fgkq/IMG-1138.jpg" class="d-block w-100" style="max-height: 350px; width: auto; object-fit:contain " alt="Wild Landscape"/>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ibb.co/z6VxmgF/IMG-1141.jpg" class="d-block w-100" style="max-height: 350px; width: auto; object-fit:contain " alt="Camera"/>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ibb.co/xC9Gtwq/IMG-1202.jpg" class="d-block w-100" style="max-height: 350px; width: auto; object-fit:contain " alt="Exotic Fruits"/>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" style="color: #3576b7;" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" style="color: #3576b7;" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+    </div>
+    <div class="col-6">
+     <div class="ratio ratio-16x9">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/9YcFjJlNGtA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+  </div>
+</div>
+</div>
+<!---->
+
+<!--Banniere boutique-->
+<div class="pt-4 pb-4 pe-5 ps-2 text-white " style="background: linear-gradient(#3f90cb,#345fa5);">
+  <div class="col-md-6 px-0 text-start">
+    <h1 class="p-1 text-uppercase" style="font-size: 1.125rem; font-weight: 800;"> Boutique</h1>
+  </div>
+</div>
+<!---->
+
+<!--Boutique-->
+<div class="container-fluid p-5" style="background-color:rgba(51, 103, 214, 0.15);">
+      <div class="ms-5" style="border-top: 3px solid #3576b7; max-width : 4rem;"></div>
+  <h2  class="text-start text-uppercase pt-3 pb-3 ms-5" style="font-size: 1.125rem;font-weight: 800; color: #3576b7;">Commandez vos équipements dans notre boutique !</h2>
+    <div class="row"> 
+        <div class="col-md-4 ">
+
+
+
+                  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light" style="height: 350px; background :url(https://i.ibb.co/0FRjqn9/PHOTO-2022-02-01-21-32-33.jpg) no-repeat center center ;
+            -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;">
+                         <a href="#!">
+                        <div class="mask d-flex align-items-end" style="background-color: rgba(251, 251, 251, 0.15);">
+                    <div class="card-body text-center ">
+                    <a href="{{ path('natation_eau_libre') }}" class="btn btn-white" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">Eau Libre</a>
+                  </div>
+              </div>
+                      </a>
+                  </div>
+
+                 
+
+              </div>
+    <div class="col-md-4">
+
+
+                  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light" style="height: 350px; background :url(https://i.ibb.co/tcdnr6s/PHOTO-2022-02-01-21-32-32-Copie.jpg) no-repeat center center ;
+            -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;">
+                   <a href="#!">
+                        <div class="mask d-flex align-items-end" style="background-color: rgba(251, 251, 251, 0.15);">
+                    <div class="card-body text-center ">
+
+                    <a href="{{ path('velo') }}" class="btn btn-white" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">Vélo</a>
+                  </div>
+
+              </div>
+                      </a>
+                  </div>
+
+
+              </div>
+
+    <div class="col-md-4">
+
+                  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light" style="height: 350px; background :url(https://i.ibb.co/rx4zN23/PHOTO-2022-02-01-21-32-32.jpg)  no-repeat center center ;
+            -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;">
+                      <a href="#!">
+                        <div class="mask d-flex align-items-end" style="background-color: rgba(251, 251, 251, 0.15);">
+                    <div class="card-body text-center ">
+                    <a href="{{ path('course_a_pied') }}" class="btn btn-white" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">Course à pied</a>
+                  </div>
+              </div>
+                      </a>
+                  </div>
+
+                  
+              </div>
+  </div>
+</div>
+<!---->
+
+<!---->
+
+<!--CSS Carousel partenaires-->
+<style>
+.wrapper1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider1 {
+    width: 1000px;
+    height: 100px;
+    position: relative;
+    background: white;
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
+    display: flex;
+    overflow: hidden;
+  }
+  .slide1 {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    animation: slideshow 8s linear infinite;
+  }
+  .slide1 img {
+    height: 70px;
+    padding: 0 30px 0 30px;
+  }
+  @keyframes slideshow {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-100%);}
+  }
+  .slider1::before, .slider1::after {
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    content: "";
+    background: linear-gradient(to right, white 0%, rgba(255,255,255,0) 100%);
+    z-index: 2;
+  }
+  .slider1::before {
+    left: 0;
+    top: 0;
+  }
+  .slider1::after {
+    right:0;
+    top:0;
+    transform: rotateZ(180deg);
+  }
+/*deuxieme scroll*/
+  .wrapper2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider2 {
+    width: 1000px;
+    height: 100px;
+    position: relative;
+    background: white;
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
+    display: flex;
+    overflow: hidden;
+  }
+  .slide2 {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    animation: slideshow2 16s linear infinite;
+  }
+  .slide2 img {
+    height: 70px;
+    padding: 0 30px 0 30px;
+  }
+  @keyframes slideshow2 {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-100%);}
+  }
+  .slider2::before, .slider2::after {
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    content: "";
+    background: linear-gradient(to right, white 0%, rgba(255,255,255,0) 100%);
+    z-index: 2;
+  }
+  .slider2::before {
+    left: 0;
+    top: 0;
+  }
+  .slider2::after {
+    right:0;
+    top:0;
+    transform: rotateZ(180deg);
+  }
+</style>
+<!-- -->
+
+ <!--Partenaires-->
+<div class="container-fluid p-5">
+<h1 class="text-center pb-4 mb-3" style="color: #3576b7; font-weight: 800; font-size:1.5rem; letter-spacing: 5px; border-bottom: 3px solid #3576b7; margin-left: 25% ; margin-right: 25%;">NOS PARTENAIRES</h1> 
+      
+      <!-- Carousel partenaires-->
+  <div class"row">    
+    <div class="wrapper1 p-2">
+      <div class="slider1">
+        <div class="slide1">
+          <img src="https://i.ibb.co/HqZmZXc/870x489-logo-bfc.webp"/>
+          <img src="https://i.ibb.co/MCJQ0JB/1200px-Logo-Ville-Auxerre-svg.png" />
+          <img src="https://i.ibb.co/r0qZPLP/1280px-Logo-Service-civique-svg.png" />
+          <img src="https://i.ibb.co/0DCGPdp/Minist-re-charg-des-Sports-svg.png"/>
+          <img src="https://i.ibb.co/NpFxGD0/Logo-Aja-Omni-Blason-02-15.png"/>
+          <img src="https://i.ibb.co/XYN4Wn9/t-l-chargement.png"/>
+          <img src="https://i.ibb.co/YXDzLfN/t-l-chargement-1.png"/>
+          <img src="https://i.ibb.co/jyptZpD/11350416-383910941796804-5199268551747727497-n.jpg"/>
+          <img src="https://i.ibb.co/GWZr3dv/13499741460.jpg">
+          
+
+        </div>
+        <div class="pt-5 pb-5"> </div>
+        <div class="slide1">
+          <img src="https://i.ibb.co/HqZmZXc/870x489-logo-bfc.webp"/>
+          <img src="https://i.ibb.co/MCJQ0JB/1200px-Logo-Ville-Auxerre-svg.png" />
+          <img src="https://i.ibb.co/r0qZPLP/1280px-Logo-Service-civique-svg.png" />
+          <img src="https://i.ibb.co/0DCGPdp/Minist-re-charg-des-Sports-svg.png"/>
+          <img src="https://i.ibb.co/NpFxGD0/Logo-Aja-Omni-Blason-02-15.png"/>
+          <img src="https://i.ibb.co/XYN4Wn9/t-l-chargement.png"/>
+          <img src="https://i.ibb.co/YXDzLfN/t-l-chargement-1.png"/>
+          <img src="https://i.ibb.co/jyptZpD/11350416-383910941796804-5199268551747727497-n.jpg"/>
+          <img src="https://i.ibb.co/GWZr3dv/13499741460.jpg">
+        </div>
+      </div>
+    </div>
+    
+    <div class="wrapper2 p-2">
+      <div class="slider2">
+        <div class="slide2">
+          <img src="https://i.ibb.co/P5G54m1/26172833-1785126698184625-1083224771048918063-o.jpg"/>
+          <img src="https://i.ibb.co/2dC0Kj4/Capture-d-cran-2022-01-13-220153.png"/>
+          <img src="https://i.ibb.co/n1jgx1z/PHOTO-2022-02-01-22-42-41.jpg"/>
+          <img src="https://i.ibb.co/5LzhJJQ/FFTRI-Logo-Mixite.png"/>
+          <img src="https://i.ibb.co/xM9DPf5/logo-2.png"/>
+          <img src="https://i.ibb.co/vcV0bMY/Samsic-890x395-c.jpg"/>
+          <img src="https://i.ibb.co/p2FnFCd/t-l-chargement-2.png"/>
+          <img src="https://i.ibb.co/YB8CFHH/t-l-chargement-3.png"/>
+          <img src="https://i.ibb.co/HdFkP1Z/t-l-chargement-4.png"/>
+        </div>
+        <div class="slide2">
+        
+          <img src="https://i.ibb.co/P5G54m1/26172833-1785126698184625-1083224771048918063-o.jpg"/>
+          <img src="https://i.ibb.co/2dC0Kj4/Capture-d-cran-2022-01-13-220153.png"/>
+          <img src="https://i.ibb.co/n1jgx1z/PHOTO-2022-02-01-22-42-41.jpg"/>
+          <img src="https://i.ibb.co/5LzhJJQ/FFTRI-Logo-Mixite.png"/>
+          <img src="https://i.ibb.co/xM9DPf5/logo-2.png"/>
+          <img src="https://i.ibb.co/vcV0bMY/Samsic-890x395-c.jpg"/>
+          <img src="https://i.ibb.co/p2FnFCd/t-l-chargement-2.png"/>
+          <img src="https://i.ibb.co/YB8CFHH/t-l-chargement-3.png"/>
+          <img src="https://i.ibb.co/HdFkP1Z/t-l-chargement-4.png"/>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+</body>
+<!---->
+{% endblock %}
+
+{% block footer %}
+ <div class="container-fluid d-flex justify-content-center position-relative text-center">
+ <img class="img logoaja" src="https://i.ibb.co/kXP0tB4/Logoajatri.png" alt="Logoajatri" style="height: 12rem; width: auto; position: absolute; z-index: 1000000; top: -1rem;">
+</div>
+
+</nav>
+<div class="pt-5 text-center">
+<h2 class="pt-4" style="font-size: 1rem; color:black ;font-weight: 800;">Mentions Légales
+ © 2022 AJ Auxerre Triathlon – tous droits réservés</h2>
+</div>
+
+{% endblock %}

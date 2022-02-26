@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello InscriptionController!{% endblock %}
+
+{% block body %}
+<style>
+@media screen and (max-width: 670px) {
+  .nageur {
+    position: absolute;
+    left: -999em;
+  }
+}
+</style>
+<div class="container-fluid">
+      <div class="row"style="
+                    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(https://i.ibb.co/r247yR3/IMG-1142.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover; ">
+        <div class="col-md-12 text-white text-center p-4">
+            <h2 class="text-uppercase p-1" style="font-size: 2.5rem; font-weight: 800;">Inscription</h2>
+        </div>
+        </div>
+</div>
+
+
+
+
+
+<div class="container-fluid">
+<div class="row">
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+              <a class="nav-link disabled"
+          ><span style="color: #000;!important;">Accueil</span></a>
+                   <a class="nav-link disabled"
+          >/</a>
+        <a class="nav-link active" aria-current="page" href="{{ path('inscrivez_vous1') }}">1 Contact</a>
+         <a class="nav-link disabled"
+          >/</a>
+        <a class="nav-link active" aria-current="page" href="{{ path('inscrivez_vous2') }}">2 Réfléxion</a>
+         <a class="nav-link disabled"
+          >/</a>
+        <a class="nav-link active" aria-current="page" href="{{ path('inscrivez_vous3') }}">3 Découverte</a>
+         <a class="nav-link disabled"
+          >/</a>
+        <a class="nav-link active" aria-current="page" href="{{ path('inscrivez_vous4') }}">4 Inscription</a>
+         <a class="nav-link disabled"
+          >/</a>
+        <a class="nav-link active" aria-current="page" href="{{ path('inscrivez_vous5') }}">5 Validation</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="p-5 text-center">
+<img class="img img-fluid" src="https://i.ibb.co/7QSGkD2/Capture-d-cran-2022-01-27-163359.png" alt="Capture-d-cran-2022-01-27-163359" border="0">
+<h4 class="text-uppercase p-3" style="font-size: 1.5rem; color: #3576b7;font-weight: 800;">COMMENT S'inscrire à Aja triathlon ?</h4>
+<p class=" p-3" style="font-size: 1.125rem; color: #000;font-weight: 800;">Rien de plus simple !<br><br> Suivez les étapes du parcours d'inscription en cliquant <a href="{{ path('inscrivez_vous1') }}"><button type="button" class="btn text-white" href="{{ path('inscrivez_vous1') }}" style="background: #3576b7; padding:4px 12px 4px 12px; border-radius: 0;">Ici !</button></a> <br><br> Ou reprenez votre inscription en selectionant l'étape ci-dessus.</p>
+</div>
+</div>
+</div>
+
+
+{% endblock %}

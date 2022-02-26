@@ -1,0 +1,158 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ActiviteController!{% endblock %}
+
+{% block body %}
+<style>
+
+@media screen and (max-width: 100000px) {
+  .logoaja {
+    position: absolute;
+    left: -999em;
+  }
+}
+</style>
+<div class="container-fluid">
+ <div class="row"style="
+                    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(https://i.ibb.co/r247yR3/IMG-1142.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover; ">
+        <div class="col-md-12 text-white text-center p-4">
+            <h2 class="text-uppercase p-1" style="font-size: 2.5rem; font-weight: 800;">Le Triathlon</h2>
+        </div>
+    </div>
+
+        <div class="row text-center " style="color: #3576b7;">
+            <div class="col-md-4 p-5">
+                <i class="fas fa-7x p-4 fa-swimmer"></i>
+                <h4 class=" font-weight-bold" style="font-size: 2rem; font-weight: 800;">NATATION</h4>
+            </div>
+            <div class="col-md-4 p-5">
+                <i class="fas fa-7x p-4 fa-biking"></i>
+                <h4 class=" font-weight-bold" style="font-size: 2rem; font-weight: 800;">VÉLO</h4>
+            </div>
+            <div class="col-md-4 p-5">
+                <i class="fas fa-7x p-4 fa-running"></i>
+                <h4 class=" font-weight-bold" style="font-size: 2rem; font-weight: 800;">COURSE</h4>
+            </div>
+        </div>
+    <div class="row text-white text-center p-5" style="background:  #3576b7; ">
+        <h3 class=" font-weight-bold"  style="font-size: 2rem; font-weight: 800;">LA REGLE</h3>
+
+        <h4 class=" font-weight-bold" style="font-size: 1.5rem; font-weight: 800;">Enchainer les trois disciplines</h4>
+
+        <div class="col-md-3">
+            <i class="fas fa-7x fa-hands-helping p-3"></i>
+            <p style="font-size: 1.125rem;">Sans se faire aider</p>
+        </div>
+        <div class="col-md-6">
+            <i class="fas fa-7x fa-stopwatch p-3"></i>
+            <p style="font-size: 1.125rem;">Sans l'arrêt du chronomètre lors du changement de discipline</p>
+        </div>
+        <div class="col-md-3">
+            <i class="far fa-7x fa-pause-circle p-3"></i>
+            <p style="font-size: 1.125rem;">Sans marquer de temps de pause</p>
+        </div>
+
+    </div>
+  <!--
+    <div class="row text-center p-5" style="color: rgba(51,103,214,1);">
+        <h3 class=" font-weight-bold">LE PARCOURS</h3>
+        <h4>
+        Le départ s'effectue soit de manière groupée "Mass Start"
+        soit par vagues successives "Contre La Montre" :
+        </h4>
+    </div>
+    <div class="row text-center p-5" style="color: rgba(51,103,214,1);">
+    <div class="container-fluid p-0 m-0">
+
+
+    </div>
+    </div>
+    -->
+<div class="row bg-white text-center pt-5 pe-5"  style="color: #3576b7;" >
+  <h3 class=" font-weight-bold pb-3">LES DIFFERENTES DISTANCES DE COURSE</h3>
+<div class="col-md-3">
+<img clas="img img-fluid" src="https://i.ibb.co/Brx2fr4/Image-PNG.png" alt="Image-PNG" border="0" style="max-height:600px; width:auto;">
+</div>
+<div class="col-md-6 d-flex justify-content-center">
+
+<table class="table" style="color: #3576b7; height:450px; width:auto;">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Nage</th>
+      <th scope="col">Vélo</th>
+      <th scope="col">Course</th>
+    </tr>
+  </thead>
+  <tbody >
+    <tr>
+      <th scope="row">FORMAT XS</th>
+      <td>400 m</td>
+      <td>10 Km</td>
+      <td>2,5 Km</td>
+    </tr>
+    <tr>
+      <th scope="row">FORMAT S</th>
+      <td>750 m</td>
+      <td>20 Km</td>
+      <td>5 Km</td>
+    </tr>
+    <tr>
+      <th scope="row">FORMAT M</th>
+      <td>1500 m</td>
+      <td>40 Km</td>
+      <td>10 Km</td>
+    </tr>
+    <tr>
+      <th scope="row">FORMAT L</th>
+      <td>3000 m</td>
+      <td>80 Km</td>
+      <td>30 Km</td>
+    </tr>
+    <tr>
+      <th scope="row">FORMAT XL</th>
+      <td>4000 m</td>
+      <td>120 Km</td>
+      <td>30 Km</td>
+    </tr>
+    <tr>
+      <th scope="row">FORMAT HALF</th>
+      <td>1900 m</td>
+      <td>90 Km</td>
+      <td>21,1 Km</td>
+    </tr>
+    <tr>
+      <th scope="row">FORMAT IRONMAN</th>
+      <td>3800 m</td>
+      <td>180 Km</td>
+      <td>42,2 Km</td>
+    </tr>
+    <tr>
+      <th scope="row">FORMAT PAR EQUIPE MIXTE</th>
+      <td>300 m</td>
+      <td>8 Km</td>
+      <td>2 Km</td>
+    </tr>
+    </tbody>
+</table>
+</div>
+<div class="col-md-3 d-flex flex-column" >
+    <h4 class="pb-5 ps-5 pe-5">
+        QUALITÉS
+        DÉVELOPPÉES.</h4>
+        <i class="fas fa-5x fa-heartbeat"></i>
+
+        <h4 class="p-5">L'endurance</h4>
+
+        <i class="fas fa-5x fa-brain"></i>
+
+        <h4 class="p-5">Force mentale</h4>
+</div>
+            </div>
+</div>
+
+{% endblock %}

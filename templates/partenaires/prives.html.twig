@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PartenairesController!{% endblock %}
+
+{% block body %}
+<style>
+@media screen and (max-width: 640px) {
+  .span2 {
+    position: absolute;
+    left: -999em;
+  }
+}
+</style>
+<div class="container-fluid">
+
+    <div class="row"style="
+                    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(https://i.ibb.co/r247yR3/IMG-1142.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover; ">
+        <div class="col-md-12 text-white text-center p-4">
+            <h2 class="text-uppercase p-1" style="font-size: 2.5rem; font-weight: 800;">Partenaires</h2>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+<h2 class="text-center text-uppercase p-4"style="font-size: 2rem; color: #3576b7;font-weight: 800;">NOS PARTENAIRES Privés</h2>
+ <h1 class=" text-center p-2" style="font-size: 1.125rem; color: #000;font-weight: 800;">Nous adressons nos sincères remerciements<br> à toutes celles et ceux qui s’engagent à nos côtés</h1>
+  <div class="text-center p-3" style="">
+
+          <img class="img img-fluid img-thumbnail" src="https://i.ibb.co/P5G54m1/26172833-1785126698184625-1083224771048918063-o.jpg" style="height: 80px;"/>
+          <img class="img img-fluid img-thumbnail" src="https://i.ibb.co/2dC0Kj4/Capture-d-cran-2022-01-13-220153.png" style="height: 80px;"/>
+          <img class="img img-fluid img-thumbnail" src="https://i.ibb.co/xM9DPf5/logo-2.png" style="height: 80px;"/>
+          <img class="img img-fluid img-thumbnail" src="https://i.ibb.co/vcV0bMY/Samsic-890x395-c.jpg" style="height: 80px;"/>
+          <img class="img img-fluid img-thumbnail" src="https://i.ibb.co/p2FnFCd/t-l-chargement-2.png" style="height: 80px;"/>
+          <img class="img img-fluid img-thumbnail" src="https://i.ibb.co/YB8CFHH/t-l-chargement-3.png" style="height: 80px;"/>
+          <img class="img img-fluid img-thumbnail" src="https://i.ibb.co/HdFkP1Z/t-l-chargement-4.png" style="height: 80px;"/>
+          <img class="img img-fluid img-thumbnail" src="https://i.ibb.co/n1jgx1z/PHOTO-2022-02-01-22-42-41.jpg" style="height: 80px;"/>
+
+  </div>
+
+
+    <div class="text-center  mt-3 p-4" style="">
+
+         <p class="text-uppercase text-center" style="font-size: 0.75rem; color: #3576b7;font-weight: 800;">
+         <a class="p-1"  href="#">Cycles Guenin</a>/
+           <a class="p-1"  href="#">Demo Design</a>/
+          <a class="p-1"  href="#">Vitalo</a>/
+           <a class="p-1"  href="#">Samsic Emploi</a>/
+           <a class="p-1"  href="#">Groupe 123 Immo</a>/
+            <a class="p-1"  href="#">Batrium Renov</a>/
+             <a class="p-1"  href="#">Moissonnier</a>/
+              <a class="p-1"  href="#">ProPulsion</a>
+             </p>
+        </div>
+<h2 class="text-center pb-5"style="font-size: 2rem; color: #3576b7;font-weight: 800;"><a href="{{ path('institutionnels') }}"><button class="text-uppercase btn mb-1" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">NOS PARTENAIRES INSTITUTIONNELS</button></a><span class="span2 p-5"></span><a href="{{ path('devenir_partenaire') }}"><button  class="text-uppercase btn mb-1" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">Devenir Partenaire</button><a/></h2>
+</div>
+{% endblock %}

@@ -1,0 +1,191 @@
+
+<!-- bg-damier -->
+
+<nav class="navbar navbar navbar-expand-lg p-0 m-0" style=" height: 90px;
+    background: url(https://i.ibb.co/DwQgGJV/pattern.png);
+    background-position: center center;
+    width: 100%;" >
+
+
+<div class="d-flex flex-row">
+    <a class="d-flex " href="{{ path('main') }} "><img src="https://i.ibb.co/kXP0tB4/Logoajatri.png" alt="Logoajatri"  style="height:100px; width:auto;" ></a>
+
+      
+
+</div>
+
+<div class="container-fluid d-flex justify-content-end position-relative text-end">
+ <img class="img logoaja"src="https://i.ibb.co/kXP0tB4/Logoajatri.png" alt="Logoajatri" style="height: 20rem; width: auto; position: absolute; z-index: 1000000; top: -5rem">
+</div>
+</nav>
+
+<!--bg-damier -->
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+
+    <button class="navbar-toggler ms-3 me-3 pl-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fas fa-bars"></span>
+    </button>
+
+    <div class="collapse navbar-collapse ms-3 me-3 text-center" id="navbarNavDropdown">
+      <ul class="navbar-nav" style="padding-left: 10%;">
+        <li class="nav-item dropdown">
+      <a class="nav-link  dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <h6 class="text-center p-0 m-0 text-uppercase" style="font-weight: 800;">Le Club</h6>
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <li><a class="dropdown-item" href="{{ path('historique') }}"><h6 class="text-center p-0 m-0 text-uppercase">Historique</h6></a></li>
+        <li><a class="dropdown-item" href="{{ path('chiffres_clefs') }}"><h6 class="text-center p-0 m-0 text-uppercase">Chiffres clefs</h6></a></li>
+        <li><a class="dropdown-item" href="{{ path('equipe') }}"><h6 class="text-center p-0 m-0 text-uppercase">L'Équipe technique</h6></a></li>
+        <li><a class="dropdown-item" href="{{ path('bureau') }}"><h6 class="text-center p-0 m-0 text-uppercase">Le Bureau</h6></a></li>
+        <li><a class="dropdown-item" href="{{ path('organisations') }}"><h6 class="text-center p-0 m-0 text-uppercase">Nos organisations</h6></a></li>
+        <li><a class="dropdown-item" href="{{ path('arbitrage') }}"><h6 class="text-center p-0 m-0 text-uppercase">L'arbitrage</h6></a></li>
+      </ul>
+    </li>
+
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <h6 class="text-center p-0 m-0 text-uppercase" style="font-weight: 800;">Actualité</h6>
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <li><a class="dropdown-item" href="{{ path('bureau1') }}"><h6 class="text-center p-0 m-0 text-uppercase">Bureau</h6></a></li>
+        <li><a class="dropdown-item" href="{{ path('boutique1') }}"><h6 class="text-center p-0 m-0 text-uppercase">Boutique</h6></a></li>
+        <li><a class="dropdown-item" href="{{ path('sport1') }}"><h6 class="text-center p-0 m-0 text-uppercase">Sport</h6></a></li>
+      </ul>
+    </li>
+<!-- (AGENDA)
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Agenda
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <li><a class="dropdown-item" href="{{ path('regroupements') }}">Nos regroupements</a></li>
+        <li><a class="dropdown-item" href="{{ path('competitions') }}">Nos compétitions</a></li>
+        <li><a class="dropdown-item" href="{{ path('anniversaires') }}">Les anniversaires</a></li>
+        <li><a class="dropdown-item" href="{{ path('quifaitquoi') }}">Qui fait quoi ?</a></li>
+      </ul>
+    </li>
+-->
+
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <h6 class="text-center p-0 m-0 text-uppercase" style="font-weight: 800;">Inscription</h6>
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+        <li><a class="dropdown-item" href="{{ path('inscrivez_vous') }}"><h6 class="text-center p-0 m-0 text-uppercase">Inscrivez-vous !</h6></a></li>
+        <li><a class="dropdown-item" href="{{ path('tarifs') }}"><h6 class="text-center p-0 m-0 text-uppercase">Tarifs</h6></a></li>
+      </ul>
+    </li>
+
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <h6 class="text-center p-0 m-0 text-uppercase" style="font-weight: 800;">Activité</h6>
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <li><a class="dropdown-item" href="{{ path('triathlon_sports_enchaines') }}"><h6 class="text-center p-0 m-0 text-uppercase">Le triathlon & sports enchaînés</h6></a></li>
+        <li><a class="dropdown-item" href="{{ path('entrainements') }}"><h6 class="text-center p-0 m-0 text-uppercase">Les entraînements</h6></a></li>
+        <li><a class="dropdown-item" href="{{ path('equipements') }}"><h6 class="text-center p-0 m-0 text-uppercase">Les équipements</h6></a></li>
+          <li><hr class="dropdown-divider"></li>
+
+            <li><a class="dropdown-item" href="{{ path('ecole_de_triathlon') }}"><h6 class="text-center p-0 m-0 text-uppercase">École de triathlon</h6></a></li>
+            <li><a class="dropdown-item" href="{{ path('loisir') }}"><h6 class="text-center p-0 m-0 text-uppercase">Loisir</h6></a></li>
+            <li><a class="dropdown-item" href="{{ path('competition') }}"><h6 class="text-center p-0 m-0 text-uppercase">Compétition</h6></a></li>
+
+        </li>
+      </ul>
+    </li>
+
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <h6 class="text-center p-0 m-0 text-uppercase" style="font-weight: 800;">Partenaires</h6>
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <li><a class="dropdown-item" href="{{ path('institutionnels') }}"><h6 class="text-center p-0 m-0 text-uppercase">Nos partenaires institutionnels</h6></a></li>
+        <li><a class="dropdown-item" href="{{ path('prives') }}"><h6 class="text-center p-0 m-0 text-uppercase">Nos partenaires privés</h6></a></li>
+        <li><a class="dropdown-item" href="{{ path('devenir_partenaire') }}"><h6 class="text-center p-0 m-0 text-uppercase">Devenir partenaire</h6></a></li>
+      </ul>
+    </li>
+
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <h6 class="text-center p-0 m-0 text-uppercase" style="font-weight: 800;">Média</h6>
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <li><a class="dropdown-item" href="{{ path('photo') }}"><h6 class="text-center p-0 m-0 text-uppercase">Galerie photos</h6></a></li>
+        <li><a class="dropdown-item" href="{{ path('video') }}"><h6 class="text-center p-0 m-0 text-uppercase">Radio & Vidéo</h6></a></li>
+        <!--<li><a class="dropdown-item" href="{{ path('press') }}"><h6 class="text-center p-0 m-0 text-uppercase">Presse</h6></a></li>-->
+      </ul>
+    </li>
+
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <h6 class="text-center p-0 m-0 text-uppercase" style="font-weight: 800;">Boutique</h6>
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <li><a class="dropdown-item" href="{{ path('natation_eau_libre') }}"><h6 class="text-center p-0 m-0 text-uppercase">Natation Eau libre</h6></a></li>
+        <li><a class="dropdown-item" href="{{ path('velo') }}"><h6 class="text-center p-0 m-0 text-uppercase">Vélo</h6></a></li>
+        <li><a class="dropdown-item" href="{{ path('course_a_pied') }}"><h6 class="text-center p-0 m-0 text-uppercase">Course à pied</h6></a></li>
+        <li><a class="dropdown-item" href="{{ path('petites_annonces') }}"><h6 class="text-center p-0 m-0 text-uppercase">Petites Annonces</h6></a></li>
+        <li><a class="dropdown-item" href="{{ path('commander') }}"><h6 class="text-center p-0 m-0 text-uppercase">Commander</h6></a></li>
+      </ul>
+    </li>
+
+        <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <h6 class="text-center p-0 m-0 text-uppercase" style="font-weight: 800;">Contact</h6>
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <li><a class="dropdown-item" href="{{ path('nous_contacter') }}"><h6 class="text-center p-0 m-0 text-uppercase">Nous contacter</h6></a></li>
+      </ul>
+    </li>
+
+
+
+
+       <ul class="nav-item test">
+        <a class="position-relative d-flex navbar-brand" href="https://www.aja.fr/ " target="_blank"><img class="logoaja2" src="https://i.ibb.co/NKgCg73/logo-3.png" alt="logo-3" border="0" style="position:absolute; height:40px; width:auto; bottom:-26px; right:-25px;" ></a>
+ </ul>
+ <ul class="nav-item test">
+        <a class="position-relative d-flex navbar-brand " href="https://ajaomnisports.wixsite.com/ajao" target="_blank"> <img class="logoaja2" src="https://i.ibb.co/NpFxGD0/Logo-Aja-Omni-Blason-02-15.png" border="0" style="position:absolute; height:40px; width:auto; bottom:-26px;"/></a>
+        </ul>
+
+        </ul>
+      
+</nav>
+
+<style>
+a{
+    color: #0E4194!important;
+    font-weight: 800;
+
+}
+        .dropdown-toggle::after {
+            content: none;  
+        }
+
+@media screen and (max-width: 1250px) {
+  .logoaja {
+    position: absolute;
+    left: -999em;
+  }
+}
+  @media screen and (max-width: 990px) {
+  .logoaja2{
+ position: static!important;
+text-align: center!important;
+padding:0;
+bottom:0;
+right:0;
+  }
+  .test{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  }
+}
+</style>

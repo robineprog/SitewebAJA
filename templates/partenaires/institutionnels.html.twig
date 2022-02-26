@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PartenairesController!{% endblock %}
+
+{% block body %}
+<style>
+@media screen and (max-width: 640px) {
+  .span2 {
+    position: absolute;
+    left: -999em;
+  }
+}
+</style>
+<div class="container-fluid">
+
+    <div class="row"style="
+                    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(https://i.ibb.co/r247yR3/IMG-1142.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover; ">
+        <div class="col-md-12 text-white text-center p-4">
+            <h2 class="text-uppercase p-1" style="font-size: 2.5rem; font-weight: 800;">Partenaires</h2>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+<h2 class="text-center p-4"style="font-size: 2rem; color: #3576b7;font-weight: 800;">NOS PARTENAIRES INSTITUTIONNELS</h2>
+ <h1 class=" text-center p-2" style="font-size: 1.125rem; color: #000;font-weight: 800;">Nous adressons nos sincères remerciements<br> à toutes celles et ceux qui s’engagent à nos côtés</h1>
+  <div class="text-center p-3" style="">
+
+          <img class="img img-fluid img-thumbnail" src="https://i.ibb.co/HqZmZXc/870x489-logo-bfc.webp" style="height: 80px;"/>
+          <img class="img img-fluid img-thumbnail" src="https://i.ibb.co/MCJQ0JB/1200px-Logo-Ville-Auxerre-svg.png" style="height: 80px;"/>
+          <img class="img img-fluid img-thumbnail" src="https://i.ibb.co/r0qZPLP/1280px-Logo-Service-civique-svg.png" style="height: 80px;"/>
+          <img class="img img-fluid img-thumbnail" src="https://i.ibb.co/0DCGPdp/Minist-re-charg-des-Sports-svg.png"style="height: 80px;"/>
+          <img class="img img-fluid img-thumbnail" src="https://i.ibb.co/NpFxGD0/Logo-Aja-Omni-Blason-02-15.png"style="height: 80px;"/>
+          <img class="img img-fluid img-thumbnail" src="https://i.ibb.co/XYN4Wn9/t-l-chargement.png"style="height: 80px;"/>
+          <img class="img img-fluid img-thumbnail" src="https://i.ibb.co/YXDzLfN/t-l-chargement-1.png"style="height: 80px;"/>
+          <img class="img img-fluid img-thumbnail" src="https://i.ibb.co/jyptZpD/11350416-383910941796804-5199268551747727497-n.jpg"style="height: 80px;"/>
+          <img class="img img-fluid img-thumbnail" src="https://i.ibb.co/GWZr3dv/13499741460.jpg"style="height: 80px;"/>
+
+  </div>
+
+
+    <div class="text-center  mt-3 p-4" style="">
+
+         <p class="text-uppercase" style="font-size: 0.75rem; color: #3576b7;font-weight: 800;"> <a class="p-1" href="#">région bourgogne franche-compté</a>/
+         <a class="p-1"  href="#">Ville d'auxerre</a>/
+           <a class="p-1"  href="#">service civique</a>/
+          <a class="p-1"  href="#">ministère des sports</a>/
+          <a class="p-1"  href="#">Aja Omnisport</a>/
+           <a class="p-1"  href="#">Conseil départemental de l'yonne</a>/
+           <a class="p-1"  href="#">Club yonne</a>/
+            <a class="p-1"  href="#">CDOS Yonne</a>/
+             <a class="p-1"  href="#">Fédération Française de Triathlon</a></p>
+          </div>
+<h2 class="text-center pb-5"style="font-size: 2rem; color: #3576b7;font-weight: 800;"><a href="{{ path('prives') }}"><button class="text-uppercase btn mb-1" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">NOS PARTENAIRES Privés</button></a><span class="span2 p-5"></span><a href="{{ path('devenir_partenaire') }}"><button  class="text-uppercase btn mb-1" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">Devenir Partenaire</button><a/></h2>
+</div>
+{% endblock %}

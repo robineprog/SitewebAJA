@@ -1,0 +1,135 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ActualiteController!{% endblock %}
+
+{% block body %}
+   <div class="container-fluid">
+      <div class="row"style="
+                    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(https://i.ibb.co/r247yR3/IMG-1142.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover; ">
+        <div class="col-md-12 text-white text-center p-4">
+            <h2 class="text-uppercase p-1" style="font-size: 2.5rem; font-weight: 800;">Actualité Boutique</h2>
+        </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+  
+
+      <div class="d-flex">
+      
+              <a class="nav-link disabled"
+          ><span style="color: #000;!important;">Actualités</span></a>
+                   <a class="nav-link disabled ps-0 pe-0"
+          >/</a>
+        <a class="nav-link disabled" aria-current="page" href="{{ path('boutique1') }}"><span style="color: #000;!important;">Boutique</span></a>
+         <a class="nav-link disabled ps-0 pe-0"
+          >/</a>
+        <a class="nav-link active" aria-current="page" href="{{ path('sport1') }}">Sport</a>
+         <a class="nav-link disabled ps-0 pe-0"
+          >/</a>
+        <a class="nav-link active pe-0" aria-current="page" href="{{ path('bureau1') }}">Bureau</a>
+      </div>  
+  </div>
+
+    <div class="container-fluid" style="background-color: rgba(53, 118, 183, 0.2)">
+
+
+  <div class="container">
+    <div class="row p-5">
+    
+
+
+
+
+
+<!-- Section: Blog v.1 -->
+
+
+
+ {% for articles2 in articles2 %} <!-- Grid row -->
+ 
+
+ <div class="card mt-2 mb-2">
+  <div class="row d-flex">
+
+    <!-- Grid column -->
+    <div class=" p-1 col-md-4 flex-row d-flex justify-content-center" >
+
+        
+          {% for image in articles2.images %}
+           <div style="height: 200px; width: 100%; background: url('{{ asset('/uploads/'~image.name) }}') no-repeat center center ;
+            -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;">
+  <div class="text-center ">
+                
+                  
+
+  </div>
+          {% endfor %}
+
+          
+
+    </div>
+    </div>
+
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="d-flex flex-column col-md-8 justify-content-between text-start p-4">
+
+      <!-- Category -->
+
+      <!-- Post title -->
+      <h3 class="text-uppercase display-6 mb-3" style="font-size: 1.5rem; color: #3576b7;font-weight: 800;">  {{ articles2.titre }}</h3>
+      <!-- Excerpt -->
+      <p class="h4"  style="font-size: 1.125rem; color:black;font-weight: 800; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{{ articles2.contenu }}</p>
+      <!-- Post data -->
+      <p style="font-size: 1rem; color:black;font-weight: 800;"><a href="https://www.facebook.com/ajatriathlon/">Facebook</a> {{ articles2.createdAt|date }}</p>
+      <!-- Read more button -->
+
+      <button style="background-color: rgb(53, 118, 183); font-size: 1.125rem; color:white;font-weight: 800; " type="button" class="btn text-center" data-mdb-toggle="modal" data-mdb-target="#test{{articles2.id}}">
+        Voir l'article !
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="test{{articles2.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header d-flex flex-column">
+               {% for image in articles2.images %}
+
+                <img class="image-fluid" src="{{ asset('/uploads/'~image.name) }}" alt="" width="100%" height="auto">
+
+              {% endfor %}
+            </div>
+            <h5 class="modal-title text-uppercase text-center" style="font-size: 1.5rem; color: #3576b7;font-weight: 800;" id="exampleModalLabel">{{ articles2.titre }}</h5>
+            <div class="modal-body" style="font-size: 1.125rem; color:black;">{{ articles2.contenu }}</div>
+                  <p ><a href="https://www.facebook.com/ajatriathlon/">Facebook</a> {{ articles2.createdAt|date }}</p>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
+
+</div>
+
+{% endfor %}
+</div>
+</div>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello InscriptionController!{% endblock %}
+
+{% block body %}
+<style>
+@media screen and (max-width: 670px) {
+  .nageur {
+    position: absolute;
+    left: -999em;
+  }
+}
+</style>
+<div class="container-fluid">
+      <div class="row"style="
+                    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(https://i.ibb.co/r247yR3/IMG-1142.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover; ">
+        <div class="col-md-12 text-white text-center p-4">
+            <h2 class="text-uppercase p-1" style="font-size: 2.5rem; font-weight: 800;">Inscription</h2>
+        </div>
+        </div>
+</div>
+
+
+
+
+
+<div class="container-fluid">
+<div class="row">
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+              <a class="nav-link active" href="{{ path('inscrivez_vous') }}"
+          >Accueil</a>
+                   <a class="nav-link disabled"
+          >/</a>
+        <a class="nav-link active" aria-current="page" href="{{ path('inscrivez_vous1') }}">1 Contact</a>
+         <a class="nav-link disabled"
+          >/</a>
+        <a class="nav-link active" aria-current="page" href="{{ path('inscrivez_vous2') }}">2 Réfléxion</a>
+         <a class="nav-link disabled"
+          >/</a>
+        <a class="nav-link active" aria-current="page" href="{{ path('inscrivez_vous3') }}">3 Découverte</a>
+         <a class="nav-link disabled"
+          >/</a>
+        <a class="nav-link disabled" aria-current="page" href="{{ path('inscrivez_vous4') }}"><span style="color: #000;!important;">4 Inscription</span></a>
+         <a class="nav-link disabled"
+          >/</a>
+        <a class="nav-link active" aria-current="page" href="{{ path('inscrivez_vous5') }}">5 Validation</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="p-5 text-center">
+<h4 class="text-uppercase p-3" style="font-size: 1.5rem; color: #3576b7;font-weight: 800;">LE TEMPS DE L'INSCRIPTION</h4>
+<p class=" p-3" style="font-size: 1.125rem; color: #000;font-weight: 800;">J'ai adoré les activités et je veux prendre ma licence au club.<br> Je m'inscris en suivant les instructions directement sur le site de la fédération.<br> <a class="btn btn-white mt-4  " style=" color: #3576b7; font-size: 1.5rem;font-weight: 800;" href="https://espacetri.fftri.com">Fédération Française de Triathlon<a/></p>
+<a href="{{ path('inscrivez_vous5') }}"><button type="button" class="btn text-white text-uppercase" style="font-size: 1.5rem; background-color: #3576b7;font-weight: 800;">étape suivante</button></a>
+
+                    
+
+</div>
+</div>
+</div>
+
+{% endblock %}

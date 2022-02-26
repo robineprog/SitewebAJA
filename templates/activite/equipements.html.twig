@@ -1,0 +1,153 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ActiviteController!{% endblock %}
+
+{% block body %}
+<style>
+
+@media screen and (max-width: 100000px) {
+  .logoaja {
+    position: absolute;
+    left: -999em;
+  }
+      .img-thumbnail:hover{
+        transition: all linear 0.05s;
+        transform: scale(1.05); 
+    }
+
+
+}
+</style>
+
+    <div style="padding-top:100px;
+                    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(https://i.ibb.co/r247yR3/IMG-1142.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover; ">
+        <div class="row text-white text-center p-0 ms-0 me-0"  style="margin-bottom:100px;">
+            <div class="col-md-2  mb-5" style="border-bottom: 3px solid #fff;
+ ">
+            </div>
+        <div class="col-md-8">
+          <h2 class="text-uppercase p-1 m-0" style="font-size: 1.5rem; font-weight: 800;">équipements</h2>
+            <h2 class="text-uppercase p-1" style="font-size: 2.5rem; font-weight: 800;">Présentation des équipements</h2>
+            </div>
+                        <div class="col-md-2 mb-5" style="border-bottom: 3px solid #fff;
+ ">
+            </div>
+        </div>
+            <div class="position-relative container " style="height: 80px;
+  background-color: #FFF;">
+  <h2 class="text-center text-uppercase pt-4"style="font-size: 2rem; color: #3576b7;font-weight: 800;">"Chaque discipline nécessite un équipement spécifique"</h2>
+
+    </div>
+
+</div>
+ <div class="container bg-with position-relative shadow-5 mb-5"> 
+ <div> <p class=" text-center p-3" style="font-size: 1rem; color: #000;font-weight: 600;"> Le triathlon est un sport enchaîné qui est la combinaison de 3 disciplines : la natation, le vélo et la course à pied.<br> Ainsi, pour vous entraîner et préparer vos compétitions de triathlon, vous devez disposer de l’équipement nécessaire à chacun de ces 3 sports.<br> Et comme si cela ne suffisait pas, on a également besoin de matériel spécifique au triathlon : des lacets élastiques, une ceinture porte-dossard ou encore une trifonction.<br> <br>
+ Vous retrouverez ci-dessous les équipements conseillés pour chaques discipline du triathlon ainsi que nos équipements de la boutique AJA!</p></div>
+    <div class="row text-start p-3 mt-5" style="color: #3576b7;">
+        <div class="col-md-8 d-flex align-items-center">
+
+
+
+         <p class="text-uppercase text-center" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;"> 
+            <span class="p-1" style="font-size: 1.5rem; color: #3576b7;font-weight: 800;" >équipements conseillés</span>
+            <br>
+            <br>
+         <span class="p-1">Maillot de bain</span>/
+         <span class="p-1"> Bonnet de bain</span>/
+           <span class="p-1"> Lunettes de natation</span>/
+          <span class="p-1"> Pull buoy et plaquettes</span>/
+          <span class="p-1">Sac</span>/
+          <span class="p-1">Gourde</span>/
+           <span class="p-1"> Tuba frontal</span>/
+           <span class="p-1"> Palmes et Planche</span>
+           </p>
+
+        </div>
+        <div class="col-md-4 text-start">
+            <div class="position-relative">
+                <h3 class="text-center" style="font-size: 1.5rem; color: #3576b7;font-weight: 800;">NOS EQUIPEMENTS PISCINE</h3>
+                <a class="" href="{{ path('natation_eau_libre') }}">
+                <img src="https://images.pexels.com/photos/260598/pexels-photo-260598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-thumbnail img-fluid" style="height: 250px; width: auto;" alt=""/></a>
+            </div>
+        </div>
+    </div>
+    <div class="row p-3 text-start text-white" style="background: #3576b7; "  >
+        <div class="col-md-4 text-center">
+            <h3 class=" text-center" style="font-size: 1.5rem; color: #ffff;font-weight: 800;">NOS EQUIPEMENTS DE NAGE EN EAU LIBRE</h3>
+            <a class="" href="{{ path('natation_eau_libre') }}">
+            <img src="https://images.pexels.com/photos/1415810/pexels-photo-1415810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-thumbnail img-fluid" style="height: 250px; width: auto;" alt=""/></a>
+        </div>
+        <div class="col-md-8 d-flex align-items-center">
+
+        <p class="text-uppercase text-center" style="font-size: 1.125rem; color: #ffff;font-weight: 800;">
+        <span class="p-1" style="font-size: 1.5rem; color: #ffff;font-weight: 800;" >équipements conseillés</span>
+        <br>
+        <br>
+         <span class="p-1">Bonnet de couleur visible</span>/
+         <span class="p-1">Lunettes claires ou sombres suivant météo</span>/
+           <span class="p-1">Combinaison Néoprène suivant température de l'eau</span>/
+          <span class="p-1">Bouée de sécurité à la taille</span>/
+          <span class="p-1">Crème anti-frottement</span>/
+          <span class="p-1">Maillot de bain Trifonction</span>
+          </p>
+
+        </div>
+    </div>
+     <div class="row text-start p-3" style="color: #3576b7;">
+        <div class="col-md-8 d-flex align-items-center">
+
+               <p class="text-uppercase text-center" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">
+                    <span class="p-1" style="font-size: 1.5rem; color: #3576b7;font-weight: 800;" >équipements conseillés</span>
+                    <br>
+                    <br>
+                    <span class="p-1">Vélo en bon état</span>/
+                    <span class="p-1">Casque à coque dure homologué.</span>/
+                    <span class="p-1">Bidons, gants</span>/
+                    <span class="p-1">Matériel de réparation (chambre à air adaptée au modèle des roues, démonte-pneu, pompe)</span>/
+                    <span class="p-1">Équipement textile adapté à la saison et à la météo (cuissard, collant, maillot court, maillot long, etc.)</span>/
+                    <span class="p-1">Lunettes</span>
+                </p>
+            
+        </div>
+        <div class="col-md-4 text-center">
+                <h3 class="text-center" style="font-size: 1.5rem; color: #3576b7;font-weight: 800;">NOS EQUIPEMENTS DE VÉLO</h3>
+                <a class="" href="{{ path('velo') }}">
+                <img src="https://images.pexels.com/photos/128202/pexels-photo-128202.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-thumbnail img-fluid" style="height: 250px; width: auto;" alt=""/></a>
+        </div>
+    </div>
+    <div class="row p-3 text-start " style="background: #3576b7; "  >
+        <div class="col-md-4 text-center">
+            <h3 class="text-center" style="font-size: 1.5rem; color: #fff;font-weight: 800;">NOS EQUIPEMENTS DE COURSE A PIED</h3>
+            <a class="" href="{{ path('course_a_pied') }}">
+            <img src="https://images.pexels.com/photos/5687444/pexels-photo-5687444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class=" img-thumbnail img-fluid" style="height: 250px; width: auto;" alt=""/></a>
+        </div>
+        <div class="col-md-8 d-flex align-items-center">
+
+                <p class="text-uppercase text-center" style="font-size: 1.125rem; color: #fff;font-weight: 800;">
+                    <span class="p-1" style="font-size: 1.5rem; color: #fff;font-weight: 800;" >équipements conseillés</span>
+                    <br>
+                    <br>
+                    <span class="p-1">Une paire de chaussure de course à pied en bon état</span>/
+                    <span class="p-1">Une tenue adaptée suivant les conditions climatiques</span>/
+                    <span class="p-1">Short & chaussettes</span>/
+                    <span class="p-1">Tee-Shirt & casquette</span>/
+                    <span class="p-1">Maillot & collant</span>/
+                    <span class="p-1">Gilet & veste</span>/
+                    <span class="p-1">Bonnet & Gants</span>/
+                    <span class="p-1">Lampe frontale</span>/
+                    <span class="p-1">Montre connectée</span>/
+                    <span class="p-1">Ceinture 3 points</span>/
+                </p>
+
+        </div>
+    </div>
+
+</div>
+
+
+</div>
+{% endblock %}

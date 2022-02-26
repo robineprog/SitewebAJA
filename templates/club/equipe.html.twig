@@ -1,0 +1,297 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HistoriqueController!{% endblock %}
+
+{% block body %}
+<style>
+
+
+</style>
+<div class="container-fluid">
+
+    <div class="row"style="
+                    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(https://i.ibb.co/r247yR3/IMG-1142.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover; ">
+        <div class="col-md-12 text-white text-center p-4">
+            <h2 class="text-uppercase p-1" style="font-size: 2.5rem; font-weight: 800;">L'équipe technique</h2>
+        </div>
+    </div>
+</div>
+<div class="container p-5 bg-white" style="color: #3576b7;">
+<div class="row text-center d-flex justify-content-center">
+<div class="col-md-12">
+<h3 class="text-uppercase p-1" style="color: black ;font-size: 2rem; font-weight: 800;">Notre équipe Technique</h3>
+<div class="row pt-3 pb-3">
+            <div class="col-md-5 mt-3" style="border-top: 1px solid #000;
+            max-width : 100%; ">
+            </div>
+            <div class="col-md-2 p-0 m-0"><h2 class="text-uppercase p-1" style="color: #3576b7 ;font-size: 1.5rem; font-weight: 800;">les coachs</h2>
+            </div>
+            <div class="col-md-5 mt-3" style="border-top: 1px solid #000;
+            max-width : 100%;"></div>
+</div>
+</div>
+</div>
+
+<style>
+
+.profile-card-2 {
+    max-width: 300px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+
+}
+
+.profile-card-2 img {
+    transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-name {
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+    font-size: 28px;
+    color: #FFF;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-icons {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    color: #FFF;
+    transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-username {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: #FFF;
+    font-size: 13px;
+    transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-icons .fa {
+    margin: 5px;
+}
+
+.profile-card-2:hover img {
+    transition: all linear 0.3s;
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+}
+
+.profile-card-2:hover .profile-name {
+    bottom: 80px;
+}
+
+.profile-card-2:hover .profile-username {
+    bottom: 60px;
+}
+
+.profile-card-2:hover .profile-icons {
+    right: 40px;
+}
+.zoom:hover{
+    transition: all linear 0.05s;
+    transform: scale(1.05); 
+}
+</style>
+
+
+
+<div class="container">
+        <div class="row shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="col-md-3">
+            <h4 class="text-center"><strong></strong></h4>
+            <a href="https://www.facebook.com/profile.php?id=100015560312024">
+            <div class="profile-card-2"  style="height: 300px; width:auto"><img src="https://i.ibb.co/sKtsWg4/PHOTO-2022-01-30-14-20-12.jpg" class="img-fluid" style="height: 125%; width: auto;">
+                <div class="profile-name">ANTONIO RIBEIRO</div>
+                <div class="profile-username"></div>
+               <!-- <div class="profile-icons"><a href="#"><i class="text-white fab fa-facebook-f fa-lg"></i></a></div> -->
+            </div>
+            </a>
+            <p>Entraîneur professionnel, bénévol au Club de triathlon. Diplome de staps entrainements et nutrition du sport</p>
+        </div>
+
+        <div class="col-md-3">
+            <h4 class="text-center"><strong></strong></h4>
+
+            <a href="https://www.facebook.com/bikou.david">
+            <div class="profile-card-2" style="height: 300px; width:auto"><img src="https://i.ibb.co/SsLfk7p/PHOTO-2022-01-10-21-58-39.jpg" class="img img-fluid ">
+                <div class="profile-name" style="font-size:1.5rem;">FABIEN GAUDICHON</div>
+                <div class="profile-username"></div>
+               <!-- <div class="profile-icons"><a href="#"><i class="text-white fab fa-facebook-f fa-lg"></i></a></div> -->
+            </div>
+            </a>
+             <p>Entraîneur professionnel, bénévol au Club de triathlon. Diplome de staps entrainements et nutrition du sport</p>
+        </div>
+
+        <div class="col-md-3">
+            <h4 class="text-center"><strong></strong></h4>
+            <a href="https://www.facebook.com/michael.tripier">
+            <div class="profile-card-2" style="height: 300px; width:auto"><img src="https://i.ibb.co/Cmh9dKb/PHOTO-2022-01-10-21-59-02.jpg" class="img img-fluid ">
+                <div class="profile-name">MICHAEL TRIPIER</div>
+                <div class="profile-username"></div>
+               <!-- <div class="profile-icons"><a href="#"><i class="text-white fab fa-facebook-f fa-lg"></i></a></div> -->
+            </div>
+            </a>
+             <p>Entraîneur professionnel, bénévol au Club de triathlon. Diplome de staps entrainements et nutrition du sport</p>
+        </div>
+        <div class="col-md-3">
+            <h4 class="text-center"><strong></strong></h4>
+            <a href="https://www.facebook.com/gaelle.breton.33">
+            <div class="profile-card-2" style="height: 300px; width:auto"><img src="https://i.ibb.co/dPpRPfc/image-26-01-22-10-15-1.jpg" class="img img-fluid ">
+                <div class="profile-name">GAËLLE BRETON</div>
+                <div class="profile-username"></div>
+               <!-- <div class="profile-icons"><a href="#"><i class="text-white fab fa-facebook-f fa-lg"></i></a></div> -->
+            </div>
+            </a>
+             <p>Entraîneur professionnel, bénévol au Club de triathlon. Diplome de staps entrainements et nutrition du sport</p>
+        </div>
+    </div>
+</div>
+<div class="container text-dark">
+    <div class="row pt-4">
+    <h4 class="text-uppercase text-center" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;"> Les coachs de l’AJA TRIATHLON qui rejoignent l’équipe technique par cooptation doivent à la fois répondre aux valeurs du club, et au niveau d’exigence de notre politique sportive fédératrice.</h4>
+        <div class="col-md-6 p-5 rounded-start"  style="background: rgba(255,255,255,0.7);  ">
+        <h4 style="font-size: 1rem; color:black;font-weight: 800;"> 
+        Au-delà de leurs qualités sportives et humaines indispensables, beaucoup sont issus du monde du travail ou du milieu sportif. Certains sont d’anciens sportifs dans leur discipline, et tous sont des entraineurs qualifiés et formés par notre fédération. 
+        <br><br>
+        Nous encourageons aussi tous les sportifs du club à rejoindre l’équipe technique pour nous prêter main forte. 
+        <br><br>
+        Nos sommes attachés au fait qu’une collaboration durable et solide s’installe pour offrir la possibilité à chacun de nos coachs la liberté dans la création de leurs séances. 
+        Cette transparence et cette confiance sont intrinsèques 
+        </h4>
+        </div>
+        <div class="col-md-6 p-5 rounded-end" style="background: rgba(255,255,255,0.7);  ">
+        <h4 style="font-size: 1rem; color:black;font-weight: 800;">
+        à notre fonctionnement et permettent d’offrir le meilleur accompagnement possible dans la pratique de tous les sports enchaînés proposés par notre fédération. 
+        <br><br>
+        L’animation de sessions sportives est résolument adaptée à tous les niveaux et passe aussi par un dialogue permanent entre l’équipe technique et ses adhérents, dialogue qui permet de tenir compte des attentes et des souhaits de chacun. 
+        <br><br>
+        Chaque programme permet aux participants une véritable évolution au fil du temps – progression, esprit d’équipe, bienveillance et bonne humeur sont toujours au rendez-vous ! 
+        </h4>
+        </div>
+    </div>
+</div>
+<div style="border-top: 1px solid #000; max-width : 100%;"></div>
+<div class="row text-white text-center p-5 d-flex justify-content-center">
+<div class="col-md-12">
+    <h3 class="text-uppercase text-center pb-3" style="font-size: 2rem; color: #3576b7;font-weight: 800;">Respect partage excellence développement éducation</h3>
+    <h4 class=" text-center" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;"> <span style="color:black">Charte éthique des Valeurs : “</span>UN SAVOIR-ÊTRE AJA<span style="color:black">”</span></h4>
+    <p class="text-start pt-5" style="font-size: 1rem; color:black;font-weight: 800;">Dans le cadre de ses activités sportives et culturelles et de son fonctionnement
+    général, l’AJA TRIATHLON applique les valeurs de la charte éthique de
+    l’association Omnisports à laquelle elle est rattaché.
+    Elle définit des valeurs de référence communes à chaque membre qui les
+    connaît qui les accepte et les met en œuvre.</p>
+</div>
+</div>
+<div class="container">
+<div class="row text-white">
+    <div class="col-md-6 d-flex d-flex justify-content-center p-4">
+            <img class="img-fluid"src="https://i.ibb.co/kXP0tB4/Logoajatri.png" alt="Logoajatri" style="max-height: 19rem; width: auto;">
+    </div>
+    <div class="col-md-6 p-4 zoom">
+        <div class="card p-5" style="background: rgba(53, 118, 183,0.2);  ">
+        <div class=" d-flex justify-content-center">
+            <h4 class="text-uppercase text-center pb-3 d-flex" style="font-size: 2rem; color: #3576b7;font-weight: 800;">
+<div class="d-flex"><i class="pe-5 fa-regular fa-handshake fa-2x"></i></div>
+            01<br>RESPECT</h4></div>
+            <p class="text-start " style="font-size: 1rem; color:black;font-weight: 800;">La diversité des idées ou avis de
+            chacun doit être respectée pour les
+            autres et par soi-même dans une
+            tolérance mutuelle qui protège la
+            liberté individuelle de pensée des
+            personnes, fidèlement aux racines
+            chrétiennes et humanistes de l’AJA.</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="row text-white">
+    <div class="col-md-6 p-4 zoom">
+        <div class="card p-5" style="background: rgba(53, 118, 183,0.2);  ">
+        <div class=" d-flex justify-content-center">
+            <h4 class="text-uppercase text-center pb-3 d-flex" style="font-size: 2rem; color: #3576b7;font-weight: 800;">
+            <div class="d-flex"><i class="pe-5 fa-brands fa-slideshare fa-2x"></i></div>
+            02<br>PARTAGE</h4></div>
+            <p  class="text-start " style="font-size: 1rem; color:black;font-weight: 800;">La dimension de partage se conçoit
+            comme une envie d’aller l’un vers
+            l’autre afin de s’enrichir et d’en être
+            renforcée par une meilleure
+            connaissance personnelle et
+            réciproque vers la construction d’un
+            avenir commun.</p>
+        </div>
+    </div>
+ 
+<div class="col-md-6 p-4 zoom ">
+    <div class="card p-5" style="background: rgba(53, 118, 183,0.2); ">
+    <div class=" d-flex justify-content-center">
+            <h4 class="text-uppercase text-center pb-3 d-flex" style="font-size: 2rem; color: #3576b7;font-weight: 800;">
+            <div class="d-flex"><i class="pe-5 fa-regular fa-hand-point-up fa-2x"></i></div>
+            03<br>EXELLENCE</h4></div>
+            <p  class="text-start " style="font-size: 1rem; color:black;font-weight: 800;">Tout temps de pratique en loisir ou en
+            compétition se construit sur une
+            volonté de progrès individuel et
+            collectif qui aide au bien-être et à
+            l’équilibre de la personnalité.<span><br><br></span></p>
+    </div>
+</div>
+</div>
+
+
+<div class="row text-white">
+        <div class="col-md-6 p-4 zoom">
+            <div class="card p-5" style="background: rgba(53, 118, 183,0.2);  ">
+            <div class=" d-flex justify-content-center">
+                <h4 class="text-uppercase text-center pb-3 d-flex" style="font-size: 2rem; color: #3576b7;font-weight: 800;">
+
+            <div class="d-flex"><i class="pe-5 fas fa-sync-alt fa-2x"></i></div>
+                04<br>DEVELOPEMMENT</h4></div>
+                <p  class="text-start " style="font-size: 1rem; color:black;font-weight: 800;">Une association vivante doit avoir
+                comme objectif prioritaire son
+                développement, sa croissance et son
+                adaptation aux évolutions de la
+                société, des pratiques et du territoire
+                local avec lequel elle tissera des
+                partenariats de développement.</p>
+            </div>
+        </div>
+
+
+    <div class="col-md-6 p-4 zoom">
+        <div class="card p-5" style="background: rgba(53, 118, 183,0.2);  ">
+        <div class=" d-flex justify-content-center">
+            <h4 class="text-uppercase pb-3 d-flex" style="font-size: 2rem; color: #3576b7;font-weight: 800;">
+            
+            <div class="d-flex"> <i  class="pe-5 fas fa-graduation-cap fa-2x"></i></div>
+            05<br>EDUCATION</h4>
+        </div>
+            <p  class="text-start " style="font-size: 1rem; color:black;font-weight: 800;">Le projet collectif sportif et culturel de
+            l’AJA Omnisports doit reposer sur
+            l’éducation populaire et la formation de
+            ses adhérents, depuis la jeunesse
+            jusqu’aux anciens, par un
+            encadrement bénévole et
+            professionnel de qualité.</p>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+{% endblock %}

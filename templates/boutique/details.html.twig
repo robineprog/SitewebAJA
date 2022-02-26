@@ -1,0 +1,144 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+<style>
+@media screen and (max-width: 100000px) {
+  .logoaja {
+    position: absolute;
+    left: -999em;
+  }
+}
+</style>
+<div class="container-fluid d-flex">
+              <a class="nav-link disabled"
+          ><span style="color: #000;!important;">Boutique</span></a>
+                   <a class="nav-link disabled ps-0 pe-0"
+          >/</a>
+        <a class="nav-link active" aria-current="page" href="{{ path('course_a_pied') }}">Course à pied</a>
+                      <a class="nav-link disabled ps-0 pe-0"
+          >/</a>
+        <a class="nav-link active" aria-current="page" href="{{ path('natation_eau_libre') }}">Natation</a>
+                           <a class="nav-link disabled ps-0 pe-0"
+          >/</a>
+
+          <a class="nav-link active" aria-current="page" href="{{ path('velo') }}">Vélo</a>
+
+</div>
+<div style=" background-color: rgba(53, 118, 183, 0.2);" class="container-fluid d-flex justify-content-center p-4">
+{% for message in app.flashes('message') %}
+<div class="p-3 text-white rounded-2 bg-success mb-2">{{ message }}</div>
+{% endfor %}
+    <div class="row d-flex">
+        <div class="col-md-8 text-center ps-5 pe-5 mt-2">
+
+
+        <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel">
+        <div class="carousel-inner bg-dark">
+                              <div class="carousel-item active">
+                          <img src="{{ asset('/uploads/'~annonce.images[0].name) }}" class=" text-center img img-fluid" style="filter: blur(5px); max-height:500px; width:auto;"/>
+                      </div>
+         {% for image in annonce.images %}
+                    
+                      <div class="carousel-item">
+                          <img src="{{ asset('/uploads/'~image.name) }}" class=" text-center img img-fluid" style="max-height: 500px; width:auto;"/>
+                      </div>
+
+        {% endfor %}
+           
+        </div>
+        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+                <div class="card col-md-4 d-flex justify-content-around flex-column mt-2 p-3">
+                <div class="text-center">
+                <img src="{{ asset('uploads/'~annonce.images[0].name) }}" style="height: 250px; max-width:380px;"/>
+                </div>
+                <div class="text-start">
+
+                    <h5 class="pt-3" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">{{ annonce.titre }}</h5>
+                </div>
+                <div class="text-justify">
+
+                    <p style="font-size: 1rem; color:black;font-weight: 800;">{{ annonce.description }}</p>
+                    </div>
+                <div class="d-flex justify-content-around">
+
+                    <h4 style="font-size: 2rem;font-weight: 800;"><span style="color: #3576b7;">{{ annonce.prix }}€</span></h4>
+                    <!-- Button trigger modal -->
+                    <button style="font-size: 1rem; background-color: #3576b7;font-weight: 800;" type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
+                    Commander
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Commande de l'article "{{ annonce.titre }}"</h5>
+                            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        {{ form_start(form)}}
+                        {{ form_widget(form.titre)}}
+
+
+                        {{ form_label(form.nom)}}
+                        {{ form_widget(form.nom)}}
+
+                        {{ form_label(form.prenom)}}
+                        {{ form_widget(form.prenom)}}
+
+
+                        {{ form_label(form.email)}}
+                        {{ form_widget(form.email)}}
+
+                        <div class="mt-1 mb-1">{{ form_label(form.taille)}}</div>
+                        {{ form_widget(form.taille)}}
+
+
+                       <div> {{ form_label(form.message)}}<br>
+                        {{ form_widget(form.message)}}</div>
+
+
+                        {{ form_widget(form.valider)}}
+
+
+
+
+ 
+                        {{ form_end(form)}}
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+window.onload = () => {
+    document.querySelector("#boutique_contact_titre").value ="{{annonce.titre}}"
+}
+</script>
+{% endblock %}
