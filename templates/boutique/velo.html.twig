@@ -11,19 +11,27 @@
     left: -999em;
   }
 }
+.titre {
+            color: white;
+            font-size: 50px;
+            text-shadow: -1px 1px 0 #000,
+                          1px 1px 0 #000,
+                         1px -1px 0 #000,
+                        -1px -1px 0 #000;
+        }
 </style>
 <div class="container-fluid">
-      <div class="row"style="
-                    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(https://i.ibb.co/r247yR3/IMG-1142.jpg) no-repeat center center fixed; 
+        <div class="row"style="
+                    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),  url(https://i.ibb.co/fNKP1Hg/bg17.jpg) no-repeat center 65% fixed; height: 15rem; 
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 background-size: cover; ">
-        <div class="col-md-12 text-white text-center p-4">
-            <h2 class="text-uppercase p-1" style="font-size: 2.5rem; font-weight: 800;">Boutique Cyclisme</h2>
+        <div class="col-md-12 text-white d-flex justify-content-center align-items-center">
+            <h2 class="text-uppercase p-1 titre" style="font-size: 2.5rem; font-weight: 800;">Boutique</h2>
         </div>
-    </div>
-  </div>
+        </div>
+</div>
  
   <div class="container-fluid d-flex">
  
@@ -31,14 +39,15 @@
           ><span style="color: #000;!important;">Boutique</span></a>
                    <a class="nav-link disabled ps-0 pe-0"
           >/</a>
-
+                  <a class="nav-link active" aria-current="page" href="{{ path('natation_eau_libre') }}">Natation</a>
+<a class="nav-link disabled ps-0 pe-0"
+          >/</a>
           <a class="nav-link disabled" aria-current="page" href="{{ path('velo') }}"><span style="color: #000;!important;">Vélo</span></a>
          <a class="nav-link disabled ps-0 pe-0"
           >/</a>
         <a class="nav-link active" aria-current="page" href="{{ path('course_a_pied') }}">Course à pied</a>
-                      <a class="nav-link disabled ps-0 pe-0"
-          >/</a>
-        <a class="nav-link active" aria-current="page" href="{{ path('natation_eau_libre') }}">Natation</a>
+                      
+
 
       </div>
 
@@ -48,7 +57,7 @@
             <h2 class="p-4 text-center" style="font-size: 1.5rem; color:black ;font-weight: 800;">Pour savoir comment commander dans la boutique AJA Triathlon, rendez vous <a href="{{ path('commander') }}" ><u>ici</u></a> !</h2>
         <div class="container">
          {% for articles in articles %}
-          <div class="row justify-content-center mb-4">
+          <div class="row justify-content-center pb-4">
             <div class="col-md-12 col-xl-10">
               <div class="card shadow-0 border rounded-3 ps-0">
                 <div class="card-body ps-2">
@@ -61,7 +70,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-6 text-start d-flex flex-column justify-content-around pe-5">
                       <h5 class="text-uppercase" style="font-size: 1.5rem; font-weight: 800; color: #000;">{{ articles.titre }}</h5>
                       <p class="text-truncate" style="font-size: 1.125rem; font-weight: 800;color: #000;" >
-                      {{ articles.description }} 
+                      {{ articles.description|striptags|raw }} 
                       </p>
                     </div>
                     <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start d-flex flex-column justify-content-around">

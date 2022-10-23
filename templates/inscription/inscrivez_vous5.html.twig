@@ -13,13 +13,13 @@
 </style>
 <div class="container-fluid">
       <div class="row"style="
-                    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(https://i.ibb.co/r247yR3/IMG-1142.jpg) no-repeat center center fixed; 
+                    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(https://i.ibb.co/kGfkQ9b/bg5.jpg) no-repeat center 35% fixed; height: 8rem; 
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 background-size: cover; ">
-        <div class="col-md-12 text-white text-center p-4">
-            <h2 class="text-uppercase p-1" style="font-size: 2.5rem; font-weight: 800;">Inscription</h2>
+        <div class="col-md-12 text-white d-flex justify-content-center align-items-center">
+            <h2 class="text-uppercase p-1 " style="font-size: 2.5rem; font-weight: 800;">Inscription</h2>
         </div>
         </div>
 </div>
@@ -67,10 +67,13 @@
   </div>
 </nav>
 <div class="p-5 text-center">
+ <div class="card p-5 " style="background: rgba(53, 118, 183,0.2);  ">
 <h4 class="text-uppercase p-3" style="font-size: 1.5rem; color: #3576b7;font-weight: 800;">LE TEMPS DE LA VALIDATION</h4>
-<p class=" p-3" style="font-size: 1.125rem; color: #000;font-weight: 800;">J'ai validé, réglé ma licence et édité mes documents <br>(questionnaire médical, autorisation parentale pour les mineurs, droit à l'image et visite médicale).<br> Je transmets les documents à la <span class="text-uppercase" type="button" data-mdb-toggle="modal" data-mdb-target="#exampleModal2" style="font-size: 1.15rem;color: #3576b7; text-decoration: underline #3576b7;font-weight: 800;">trésorière</span> et je règle par chèque ou <span type="button" data-mdb-toggle="modal" data-mdb-target="#exampleModal1"  style="font-size: 1.15rem;color: #3576b7; text-decoration: underline #3576b7;font-weight: 800;">VIREMENT
-</span> ma cotisation.</p>
+<p class=" p-3" style="font-size: 1.125rem; color: #000;font-weight: 800;">J'ai validé, réglé ma licence, j'ai édité mes documents <br>(le <span style="color: #3576b7;">justificatif de réglement de la licence</span>, le <span style="color: #3576b7;">questionnaire médical</span> si nécessaire,<br>  <span style="color: #3576b7;">autorisation parentale</span> pour les mineurs,  le <span style="color: #3576b7;">droit à l'image</span> et la <span style="color: #3576b7;">visite médicale</span>).<br><br> Je transmets les documents à la <span class="text-uppercase" type="button" data-mdb-toggle="modal" data-mdb-target="#exampleModal2" style="font-size: 1.15rem;color: #3576b7; text-decoration: underline #3576b7;font-weight: 800;">trésorière</span> et je règle par chèque ou <span type="button" data-mdb-toggle="modal" data-mdb-target="#exampleModal1"  style="font-size: 1.15rem;color: #3576b7; text-decoration: underline #3576b7;font-weight: 800;">VIREMENT
+</span> mon adhésion au club.</p>
+
 <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body d-flex justify-content-center" style="background-color: #3576b7;">
@@ -111,9 +114,9 @@
     </div>
   </div>
 </div>
-<a href="{{ path('course_a_pied') }}"><button type="button" class="btn text-white text-uppercase" style="font-size: 1.5rem; background-color: #3576b7;font-weight: 800;">Commandez votre tenue AJA</button></a>
+<a href="{{ path('commander') }}"><button type="button" class="btn text-white text-uppercase" style="font-size: 1.5rem; background-color: #3576b7;font-weight: 800;">Commandez votre tenue AJA</button></a>
 
-                    
+      </div>              
 
 </div>
 </div>

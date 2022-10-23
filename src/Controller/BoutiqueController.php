@@ -87,11 +87,11 @@ class BoutiqueController extends AbstractController
         $form = $this->createForm(BoutiqueContactType::class);
 
         $contact = $form->handleRequest($request);
-
+        if(isset($_POST['raison']) && empty($_POST['raison'])){
         if($form->isSubmitted() && $form->isValid()){
             $email = (new TemplatedEmail())
                 ->from($contact->get('email')->getData())
-                ->to('emailaja.test@test')
+                ->to('hugo.robine@gmail.com')
                ->subject('Commande boutique siteweb AJA"' . $annonce->getTitre().'"')
                ->htmlTemplate('emails/contact_annonce.html.twig')
                ->context([
@@ -101,7 +101,7 @@ class BoutiqueController extends AbstractController
                    'prenom'=> $contact->get('prenom')->getData(),
                    'taille'=> $contact->get('taille')->getData(),
                    'message'=> $contact->get('message')->getData()  
-              ]);
+              ]);}
 
               $mailer->send($email);
 

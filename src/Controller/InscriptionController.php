@@ -71,7 +71,7 @@ class InscriptionController extends AbstractController
         $form = $this->createForm(InscriptionType::class);
 
         $contact = $form->handleRequest($request);
-
+        if(isset($_POST['raison']) && empty($_POST['raison'])){
         if($form->isSubmitted() && $form->isValid()){
             $email = (new TemplatedEmail())
                 ->from($contact->get('email')->getData())
@@ -81,7 +81,7 @@ class InscriptionController extends AbstractController
                ->context([
                    'mail' => $contact->get('email')->getData(),
 
-                ]);
+                ]);}
 
                 $mailer->send($email);
   

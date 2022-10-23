@@ -41,8 +41,8 @@
         <li><a class="dropdown-item" href="{{ path('chiffres_clefs') }}"><h6 class="text-center p-0 m-0 text-uppercase">Chiffres clefs</h6></a></li>
         <li><a class="dropdown-item" href="{{ path('equipe') }}"><h6 class="text-center p-0 m-0 text-uppercase">L'Équipe technique</h6></a></li>
         <li><a class="dropdown-item" href="{{ path('bureau') }}"><h6 class="text-center p-0 m-0 text-uppercase">Le Bureau</h6></a></li>
-        <li><a class="dropdown-item" href="{{ path('organisations') }}"><h6 class="text-center p-0 m-0 text-uppercase">Nos organisations</h6></a></li>
-        <li><a class="dropdown-item" href="{{ path('arbitrage') }}"><h6 class="text-center p-0 m-0 text-uppercase">L'arbitrage</h6></a></li>
+        <!--<li><a class="dropdown-item" href="{{ path('organisations') }}"><h6 class="text-center p-0 m-0 text-uppercase">Nos organisations</h6></a></li>
+        --><li><a class="dropdown-item" href="{{ path('arbitrage') }}"><h6 class="text-center p-0 m-0 text-uppercase">L'arbitrage</h6></a></li>
       </ul>
     </li>
 
@@ -126,11 +126,12 @@
         <h6 class="text-center p-0 m-0 text-uppercase" style="font-weight: 800;">Boutique</h6>
       </a>
       <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <li><a class="dropdown-item" href="{{ path('commander') }}"><h6 class="text-center p-0 m-0 text-uppercase">Commander</h6></a></li>
         <li><a class="dropdown-item" href="{{ path('natation_eau_libre') }}"><h6 class="text-center p-0 m-0 text-uppercase">Natation Eau libre</h6></a></li>
         <li><a class="dropdown-item" href="{{ path('velo') }}"><h6 class="text-center p-0 m-0 text-uppercase">Vélo</h6></a></li>
         <li><a class="dropdown-item" href="{{ path('course_a_pied') }}"><h6 class="text-center p-0 m-0 text-uppercase">Course à pied</h6></a></li>
-        <li><a class="dropdown-item" href="{{ path('petites_annonces') }}"><h6 class="text-center p-0 m-0 text-uppercase">Petites Annonces</h6></a></li>
-        <li><a class="dropdown-item" href="{{ path('commander') }}"><h6 class="text-center p-0 m-0 text-uppercase">Commander</h6></a></li>
+        <!--<li><a class="dropdown-item" href="{{ path('petites_annonces') }}"><h6 class="text-center p-0 m-0 text-uppercase">Petites Annonces</h6></a></li>
+        -->
       </ul>
     </li>
 
@@ -147,10 +148,10 @@
 
 
        <ul class="nav-item test">
-        <a class="position-relative d-flex navbar-brand" href="https://www.aja.fr/ " target="_blank"><img class="logoaja2" src="https://i.ibb.co/NKgCg73/logo-3.png" alt="logo-3" border="0" style="position:absolute; height:40px; width:auto; bottom:-26px; right:-25px;" ></a>
+        <a class="position-relative d-flex navbar-brand" href="https://www.aja.fr/ " target="_blank"><img class="logoaja2" src="https://i.ibb.co/NKgCg73/logo-3.png" alt="logo-3" border="0" style="position:absolute; height:38px; width:auto; bottom:-26px; right:-25px;" ></a>
  </ul>
  <ul class="nav-item test">
-        <a class="position-relative d-flex navbar-brand " href="https://ajaomnisports.wixsite.com/ajao" target="_blank"> <img class="logoaja2" src="https://i.ibb.co/NpFxGD0/Logo-Aja-Omni-Blason-02-15.png" border="0" style="position:absolute; height:40px; width:auto; bottom:-26px;"/></a>
+        <a class="position-relative d-flex navbar-brand " href="https://ajaomnisports.wixsite.com/ajao" target="_blank"> <img class="logoaja2" src="https://i.ibb.co/NpFxGD0/Logo-Aja-Omni-Blason-02-15.png" border="0" style="position:absolute; height:38px; width:auto; bottom:-26px;"/></a>
         </ul>
 
         </ul>
@@ -158,6 +159,7 @@
 </nav>
 
 <style>
+
 a{
     color: #0E4194!important;
     font-weight: 800;
@@ -167,12 +169,18 @@ a{
             content: none;  
         }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1280px) {
   .logoaja {
     position: absolute;
     left: -999em;
   }
 }
+  @media screen and (max-width: 800px) {
+  .imgprez{
+    position: absolute;
+    left: -999em;
+  }
+  }
   @media screen and (max-width: 990px) {
   .logoaja2{
  position: static!important;

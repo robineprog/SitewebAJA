@@ -20,9 +20,31 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;" >
+<style>
+  @media screen and (max-width: 796px) {
+  .bvn{
+    text-transform: uppercase;
+;
+  padding: 8px 12px;
+  color: #000;
+  position: absolute; 
+  top: 55%;
+  font-size: 1.5rem;font-weight: 800;"}
+  }
+ @media screen and (max-width: 476px) {
+  .bvn{
+    text-transform: uppercase;
+;
+  padding: 8px 12px;
+  color: #000;
+  position: absolute; 
+  top: 50%;
+  font-size: 1.5rem;font-weight: 800;"}
+  }
 
+</style>
   <div class="row d-flex justify-content-center p-0 m-0" style="background : rgba(255,255,255,0.7) ;bottom: 0; width:100%;">
-    <div class="d-flex col ps-5"><h2 class="text-white"style="
+    <div class="d-flex col ps-5 bvn"><h2 class="text-white"style="
     text-transform: uppercase;
   background-color: #3576B7;
   padding: 8px 12px;
@@ -59,7 +81,7 @@ rgba(232,240,247,1);">
         <br><br><h2 class="text-uppercase text-center" style="color: #3576b7; font-size:1rem; font-weight: 800;">Bonne saison à tous.</h2> </p>
       </div>
       <div class="col-md-4 d-flex justify-content-end"  data-aos="fade-top" data-aos-duration="3000">
-     <img class="img-fluid text-end" src="https://i.ibb.co/2WcKPFq/Photo-Room-20201201-204202.png" alt="Photo-Room-20201201-204202" style="max-width: 24rem; height: auto;">
+     <img class="img-fluid text-end imgprez" src="https://i.ibb.co/2WcKPFq/Photo-Room-20201201-204202.png" alt="Photo-Room-20201201-204202" style="max-width: 24rem; height: auto;">
       </div>
     </div>   
 </div>
@@ -85,7 +107,7 @@ rgba(232,240,247,1);">
   {% for articles in articles %}
     <div class="col-md-4 ps-5 pe-5 pt-1">
 
-      <div class="card" data-aos="fade-bot" data-aos-duration="1000" style="height: 24rem; background-color: white; 	-webkit-box-shadow: none;
+      <div class="card m-3" data-aos="fade-bot" data-aos-duration="1000" style="height: 24rem; background-color: white; 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
 -webkit-border-radius: 0;
@@ -111,7 +133,7 @@ border-radius: 0;">
     {% for articles2 in articles2 %}
     <div class="col-md-4 ps-5 pe-5 pt-1">
 
-      <div class="card" data-aos="fade-bot" data-aos-duration="1000" style="height: 24rem; background-color: white; 	-webkit-box-shadow: none;
+      <div class="card m-3" data-aos="fade-bot" data-aos-duration="1000" style="height: 24rem; background-color: white; 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
 -webkit-border-radius: 0;
@@ -141,7 +163,7 @@ border-radius: 0;">
     {% for articles3 in articles3 %}
     <div class="col-md-4 ps-5 pe-5 pt-1">
 
-      <div class="card" data-aos="fade-bot" data-aos-duration="1000" style="height: 24rem; background-color: white; 	-webkit-box-shadow: none;
+      <div class="card m-3" data-aos="fade-bot" data-aos-duration="1000" style="height: 24rem; background-color: white; 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
 -webkit-border-radius: 0;
@@ -264,13 +286,14 @@ a{
       <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="https://i.ibb.co/Pj6Fgkq/IMG-1138.jpg" class="d-block w-100" style="max-height: 350px; width: auto; object-fit:contain " alt="Wild Landscape"/>
+          <img src="https://i.ibb.co/mzz7PhL/bg5.jpg" class="d-block w-100" style="max-height: 350px; width: auto; object-fit:contain " alt="Wild Landscape"/>
         </div>
         <div class="carousel-item">
-          <img src="https://i.ibb.co/z6VxmgF/IMG-1141.jpg" class="d-block w-100" style="max-height: 350px; width: auto; object-fit:contain " alt="Camera"/>
+          <img src="https://i.ibb.co/W3sGWt3/286514958-184725237232666-7038565514192343866-n.jpg" class="d-block w-100" style="max-height: 350px; width: auto; object-fit:contain " alt="Camera"/>
         </div>
         <div class="carousel-item">
-          <img src="https://i.ibb.co/xC9Gtwq/IMG-1202.jpg" class="d-block w-100" style="max-height: 350px; width: auto; object-fit:contain " alt="Exotic Fruits"/>
+
+          <img src="https://i.ibb.co/Tr8ckKt/272875320-157949699910220-6341262334947860894-n.jpg" class="d-block w-100" style="max-height: 350px; width: auto; object-fit:contain " alt="Exotic Fruits"/>
         </div>
       </div>
       <button class="carousel-control-prev" type="button" style="color: #3576b7;" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
@@ -284,7 +307,7 @@ a{
 
     </div>
     </div>
-    <div class="col-6">
+    <div class="col-6 d-flex">
      <div class="ratio ratio-16x9">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/9YcFjJlNGtA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
@@ -310,7 +333,7 @@ a{
 
 
 
-                  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light" style="height: 350px; background :url(https://i.ibb.co/0FRjqn9/PHOTO-2022-02-01-21-32-33.jpg) no-repeat center center ;
+                  <div class="bg-image hover-overlay ripple m-3" data-mdb-ripple-color="light" style="height: 350px; background :url(https://i.ibb.co/VQHHNN3/Whats-App-Image-2022-10-18-19-25-24.jpg) no-repeat center center ;
             -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -329,8 +352,8 @@ a{
               </div>
     <div class="col-md-4">
 
-
-                  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light" style="height: 350px; background :url(https://i.ibb.co/tcdnr6s/PHOTO-2022-02-01-21-32-32-Copie.jpg) no-repeat center center ;
+    
+                  <div class="bg-image hover-overlay ripple m-3" data-mdb-ripple-color="light" style="height: 350px; background :url(https://i.ibb.co/vvXYLnR/Whats-App-Image-2022-10-18-19-25-30.jpg) no-repeat center center ;
             -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -351,7 +374,7 @@ a{
 
     <div class="col-md-4">
 
-                  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light" style="height: 350px; background :url(https://i.ibb.co/rx4zN23/PHOTO-2022-02-01-21-32-32.jpg)  no-repeat center center ;
+                  <div class="bg-image hover-overlay ripple m-3" data-mdb-ripple-color="light" style="height: 350px; background :url(https://i.ibb.co/kH2S0fr/Whats-App-Image-2022-10-18-19-25-08.jpg)  no-repeat center center ;
             -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;

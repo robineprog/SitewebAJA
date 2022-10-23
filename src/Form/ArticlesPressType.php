@@ -10,6 +10,7 @@ use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use FOS\CKEditorBundle\Form\Type\CKEditorType;
 
 class ArticlesPressType extends AbstractType
 {
@@ -18,7 +19,7 @@ class ArticlesPressType extends AbstractType
         $builder
             ->add('titre', TextType::class)
             
-            ->add('contenu')
+            ->add('contenu', CKEditorType::class)
             ->add('featured_image', TextType::class)
             ->add('images', FileType::class,[
                 'label' => false,

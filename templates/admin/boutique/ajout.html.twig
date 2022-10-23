@@ -10,7 +10,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css" rel="stylesheet"/>
 
 
-<body class="pb-5" style="background-image: url('https://images.pexels.com/photos/2387532/pexels-photo-2387532.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); background-size:cover;">
+<body style="background: url('https://images.pexels.com/photos/2387532/pexels-photo-2387532.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')no-repeat center center fixed;">
  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container-fluid">
@@ -59,7 +59,7 @@
   <div class="card bg-white">
     <div class="col">
       <label class="text-left">
-				<h2>Titre</h2>
+				<h2>Titre :</h2>
       </label>
       <div>
         {{ form_widget(form.titre) }}
@@ -74,10 +74,10 @@
       </div>
     </div>
 
-
+<div class="row">
     <div class="col">
       <label class="text-left">
-			  <h2>Infos images :</h2>
+			  <h2>Prix :</h2>
       </label>
       <div>
         {{ form_widget(form.prix) }}
@@ -85,7 +85,7 @@
     </div>
     <div class="col">
       <label class="text-left">
-				<h2>Images</h2>
+				<h2>Desciption de l'image : <br><span style="font-size:10px;">(pour faciliter l'accès au personne non voyante)</span></h2>
       </label>
 		  <div>
       {{ form_widget(form.featured_image) }}
@@ -94,14 +94,16 @@
 
     <div class="col">
       <label class="text-left">
-				<h2>NEW CATEGORIE</h2>
+				<h2>Image :</h2>
       </label>
       <div>
         {{ form_widget(form.images) }}
       </div>
+      </div>
+    <div class="row">
     <div class="col">
       <label class="text-left">
-			  <h2>Créateur</h2>
+			  <h2>Catégorie :</h2>
       </label>
 			<div>
         {{ form_widget(form.categorie) }}
@@ -117,7 +119,7 @@
 </div>
 </div>
 </div>
-
+</div>
 <div class="container">
     {# Si la route est "annonces_edit on affiche les images #}
 	{% if app.request.attributes.get('_route') == 'admin_actualités_modifier' %}

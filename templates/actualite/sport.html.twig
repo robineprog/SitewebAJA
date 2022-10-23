@@ -20,15 +20,16 @@
   
               <a class="nav-link disabled"
           ><span style="color: #000;!important;">Actualités</span></a>
-                   <a class="nav-link disabled ps-0 pe-0"
-          >/</a>
-          <a class="nav-link disabled" aria-current="page" href="{{ path('sport1') }}"><span style="color: #000;!important;">Sport</span></a>
+                  
               <a class="nav-link disabled ps-0 pe-0"
           >/</a>
           <a class="nav-link active" aria-current="page" href="{{ path('bureau1') }}">Bureau</a>
          <a class="nav-link disabled ps-0 pe-0"
           >/</a>
         <a class="nav-link active" aria-current="page" href="{{ path('boutique1') }}">Boutique</a>
+        <a class="nav-link disabled ps-0 pe-0"
+          >/</a>
+        <a class="nav-link disabled" aria-current="page" href="{{ path('sport1') }}"><span style="color: #000;!important;">Sport</span></a>
       </div>
 
     <div class="container-fluid" style="background-color: rgba(53, 118, 183, 0.2)">
@@ -82,7 +83,7 @@
       <!-- Post title -->
       <h3 class="text-uppercase display-6 mb-3" style="font-size: 1.5rem; color: #3576b7;font-weight: 800;">  {{ articles3.titre }}</h3>
       <!-- Excerpt -->
-      <p class="h4"  style="font-size: 1.125rem; color:black;font-weight: 800; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{{ articles3.contenu }}</p>
+      <div class="h4"  style="font-size: 1.125rem; color:black;font-weight: 800; overflow: hidden; white-space: nowrap; text-overflow: ellipsis!important;">{{ articles3.contenu|striptags|raw }}</div>
       <!-- Post data -->
       <p style="font-size: 1rem; color:black;font-weight: 800;"><a href="https://www.facebook.com/ajatriathlon/">Facebook</a> {{ articles3.createdAt|date }}</p>
       <!-- Read more button -->
@@ -103,7 +104,7 @@
               {% endfor %}
             </div>
             <h5 class="modal-title text-uppercase text-center" style="font-size: 1.5rem; color: #3576b7;font-weight: 800;" id="exampleModalLabel">{{ articles3.titre }}</h5>
-            <div class="modal-body" style="font-size: 1.125rem; color:black;">{{ articles3.contenu }}</div>
+            <div class="modal-body" style="font-size: 1.125rem; color:black;">{{ articles3.contenu|raw  }}</div>
                   <p class="text-center"><a href="https://www.facebook.com/ajatriathlon/">Facebook</a> {{ articles3.createdAt|date }}</p>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>

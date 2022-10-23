@@ -22,7 +22,7 @@ class InscriptionType extends AbstractType
         ])
         ->add('Envoyer', SubmitType::class, [
             'attr' => [
-                'class' => 'btn mt-2']
+                'class' => 'btn btn-white mt-2']
         ])
         ;
     }

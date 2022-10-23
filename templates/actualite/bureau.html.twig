@@ -85,7 +85,7 @@
       <!-- Post title -->
       <h3 class="text-uppercase mb-3" style="font-size: 1.5rem; color: #3576b7;font-weight: 800;">  {{ articles.titre }}</h3>
       <!-- Excerpt -->
-      <p class="h4"  style="font-size: 1.125rem; color:black;font-weight: 800; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{{ articles.contenu }}</p>
+      <p style="font-size: 1.125rem; color:black;font-weight: 800; overflow: hidden!important; white-space: nowrap!important; text-overflow: ellipsis!important;">{{ articles.contenu|striptags|raw }}</p>
       <!-- Post data -->
       <p style="font-size: 1rem; color:black;font-weight: 800;"><a href="https://www.facebook.com/ajatriathlon/">Facebook</a> {{ articles.createdAt|date }}</p>
       <!-- Read more button -->
@@ -106,7 +106,7 @@
               {% endfor %}
             </div>
             <h5 class="modal-title text-uppercase text-center" style="font-size: 1.5rem; color: #3576b7;font-weight: 800;" id="exampleModalLabel">{{ articles.titre }}</h5>
-            <div class="modal-body" style="font-size: 1.125rem; color:black;">{{ articles.contenu }}</div>
+            <div class="modal-body" style="font-size: 1.125rem; color:black;">{{ articles.contenu|raw }}</div>
                   <p class="text-center"><a href="https://www.facebook.com/ajatriathlon/">Facebook</a> {{ articles.createdAt|date }}</p>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>

@@ -18,13 +18,15 @@
 </style>
 <div class="container-fluid">
 
-  <h1 class="fw-light text-center text-lg-start mt-4 mb-0">Vidéo du Club :</h1>
+<h2 style="font-size: 2.5rem; font-weight: 800; color: #0E4194;" class=" text-uppercase p-1 fw-light text-center text-lg-center mt-3 mb-0">Vidéo & Radio</h1>
 
   <hr class="mt-2 mb-5"> 
 
-<div class="container" style="padding-left: 20%; padding-right: 20%;">
-  <div class="row text-center text-lg-start d-flex ">
- 	{% for media2 in media2 %}
+<div class="container d-flex justify-content-start ">
+  <div class="row text-center text-lg-start mb-5">
+<div class="col-md-4 border  border-5 rounded" style="border-color:#3576b7!important"><a href="https://www.radiofrance.fr/franceculture/podcasts/sans-oser-le-demander/championnat-du-monde-d-ironman-a-quoi-bon-se-faire-autant-de-mal-4837919" target="_blank"><img class="img-fluid fftri" src="https://www.radiofrance.fr/s3/cruiser-production/2022/10/9284bb00-0388-437d-958c-eae7bc937b00/560x315_063-1431321786.webp" alt="Logo-EFT-CMJN-1" border="0"><span style="font-size:1.5rem">RadioFrance</span> <br> Championnat du monde d’Ironman : à quoi bon se faire autant de mal ?</a>
+ 	</div>
+  {% for media2 in media2 %}
            	{% for media2 in media2.images %}
     <div class="col-md-4 d-flex justify-content-center align-items-center text-center p-0 m-0" style="widht:200px; height:auto;">
       <a class="shadow-3-strong rounded mb-4" href="{{ asset('/uploads/'~media2.name) }}" data-lightbox="roadtrip"><img src="{{ asset('/uploads/'~media2.name) }}" class="example-image img-thumbnail" style="max-width:200px; height:auto;"></a>

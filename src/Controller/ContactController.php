@@ -22,7 +22,7 @@ class ContactController extends AbstractController
         ]);
     }
 
-       /**
+    /**
      * @Route("/contact/nous_contacter", name="nous_contacter")
      */
     public function nous_contacter(Request $request, MailerInterface $mailer)
@@ -31,18 +31,18 @@ class ContactController extends AbstractController
         $form = $this->createForm(ContactType::class);
 
         $contact = $form->handleRequest($request);
-
+        if(isset($_POST['raison']) && empty($_POST['raison'])){
         if($form->isSubmitted() && $form->isValid()){
             $email = (new TemplatedEmail())
                 ->from($contact->get('email')->getData())
-                ->to('emailaja.test@test')
+                ->to('hugo.robine@gmail.com')
                ->subject('Contact siteweb AJA')
                ->htmlTemplate('emails/contact.html.twig')
                ->context([
                    'mail' => $contact->get('email')->getData(),
                    'sujet'=> $contact->get('sujet')->getData(),
                    'message'=> $contact->get('message')->getData()  
-              ]);
+              ]);}
 
               $mailer->send($email);
 
