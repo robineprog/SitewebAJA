@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "574bc33e73e004b3a1959382427a2a0e",
+    "content-hash": "39aba36e7e4e8e714ef8d82559e5cfc6",
     "packages": [
         {
             "name": "antishov/doctrine-extensions-bundle",
@@ -2607,6 +2607,32 @@
             "time": "2021-12-24T11:52:04+00:00"
         },
         {
+            "name": "symfony/apache-pack",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/apache-pack.git",
+                "reference": "3aa5818d73ad2551281fc58a75afd9ca82622e6c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/apache-pack/zipball/3aa5818d73ad2551281fc58a75afd9ca82622e6c",
+                "reference": "3aa5818d73ad2551281fc58a75afd9ca82622e6c",
+                "shasum": ""
+            },
+            "type": "symfony-pack",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A pack for Apache support in Symfony",
+            "support": {
+                "issues": "https://github.com/symfony/apache-pack/issues",
+                "source": "https://github.com/symfony/apache-pack/tree/master"
+            },
+            "time": "2017-12-12T01:46:35+00:00"
+        },
+        {
             "name": "symfony/asset",
             "version": "v5.4.0",
             "source": {
@@ -3309,16 +3335,16 @@
         },
         {
             "name": "symfony/dotenv",
-            "version": "v5.4.2",
+            "version": "v5.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dotenv.git",
-                "reference": "1f28b9b3edf9da7e2c4b295dcd1df291ccb498d3"
+                "reference": "83a2310904a4f5d4f42526227b5a578ac82232a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dotenv/zipball/1f28b9b3edf9da7e2c4b295dcd1df291ccb498d3",
-                "reference": "1f28b9b3edf9da7e2c4b295dcd1df291ccb498d3",
+                "url": "https://api.github.com/repos/symfony/dotenv/zipball/83a2310904a4f5d4f42526227b5a578ac82232a9",
+                "reference": "83a2310904a4f5d4f42526227b5a578ac82232a9",
                 "shasum": ""
             },
             "require": {
@@ -3360,7 +3386,7 @@
                 "environment"
             ],
             "support": {
-                "source": "https://github.com/symfony/dotenv/tree/v5.4.2"
+                "source": "https://github.com/symfony/dotenv/tree/v5.4.5"
             },
             "funding": [
                 {
@@ -3376,7 +3402,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-16T21:52:00+00:00"
+            "time": "2022-02-15T17:04:12+00:00"
         },
         {
             "name": "symfony/error-handler",
