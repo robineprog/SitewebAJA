@@ -1,117 +1,126 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ContactController!{% endblock %}
+{% block title %}Hello ContactController!
+{% endblock %}
 
 {% block body %}
-<style>
+	<style>
 
-@media screen and (max-width: 100000px) {
-  .logoaja {
-    position: absolute;
-    left: -999em;
-  }
-      i:hover{
-        transition: all linear 0.05s;
-        transform: scale(1.05); 
-    }
-}
-</style>
-<div class="container-fluid pb-5 ps-0 pe-0" style="padding-top:100px;
-                    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(https://images.pexels.com/photos/346734/pexels-photo-346734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center 80% fixed; 
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover; ">
-    <div class="row text-white text-center p-0 ms-0 me-0"  style="margin-bottom:100px;">
-        <div class="col-md-2  mb-5" style="border-bottom: 3px solid #fff;"></div>
-        <div class="col-md-8">
-          <h2 class="text-uppercase p-1 m-0" style="font-size: 1.5rem; font-weight: 800;"></h2>
-            <h2 class="text-uppercase p-1" style="font-size: 2.5rem; font-weight: 800;">Nous contacter</h2>
-        </div>
-        <div class="col-md-2 mb-5" style="border-bottom: 3px solid #fff;"></div>
-    </div>
-    <div class="position-relative container " style="border-top: 1px solid grey;border-left: 1px solid grey;border-right: 1px solid grey ;height: 80px; background-color: #FFF;">
-        <h2 class="text-center pt-5"style="font-size: 2rem; color: #3576b7;font-weight: 800;"></h2>
-    </div>
-
-
-<div class="container-fluid  p-0 m-0" style="background: linear-gradient(#3f90cb,#345fa5);">
-
-    <div class="container bg-white  position-relative shadow-5" >
+		@media screen and(max-width: 100000px) {
+			.logoaja {
+				position: absolute;
+				left: -999em;
+			}
+			i:hover {
+				transition: all linear 0.05s;
+				transform: scale(1.05);
+			}
+		}
+	</style>
+	<div class="container-fluid pb-5 ps-0 pe-0" style="padding-top:100px;
+			                    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(https://images.pexels.com/photos/346734/pexels-photo-346734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center 80% fixed;
+			                -webkit-background-size: cover;
+			                -moz-background-size: cover;
+			                -o-background-size: cover;
+			                background-size: cover; ">
+		<div class="row text-white text-center p-0 ms-0 me-0" style="margin-bottom:100px;">
+			<div class="col-md-2  mb-5" style="border-bottom: 3px solid #fff;"></div>
+			<div class="col-md-8">
+				<h2 class="text-uppercase p-1 m-0" style="font-size: 1.5rem; font-weight: 800;"></h2>
+				<h2 class="text-uppercase p-1" style="font-size: 2.5rem; font-weight: 800;">Nous contacter</h2>
+			</div>
+			<div class="col-md-2 mb-5" style="border-bottom: 3px solid #fff;"></div>
+		</div>
+		<div class="position-relative container " style="border-top: 1px solid grey;border-left: 1px solid grey;border-right: 1px solid grey ;height: 80px; background-color: #FFF;">
+			<h2 class="text-center pt-5" style="font-size: 2rem; color: #3576b7;font-weight: 800;"></h2>
+		</div>
 
 
-<div class="row ps-5 pe-5 bg-white  ">
-{% for message in app.flashes('message') %}
-<div class="p-3 text-white rounded-2 bg-success mb-2 mt-2">{{ message }}</div>
-{% endfor %}
-  <div class="col-md-6 text-center pt-5 rounded"  >
+		<div class="container-fluid  p-0 m-0" style="background: linear-gradient(#3f90cb,#345fa5);">
 
-  <a href="https://www.facebook.com/ajatriathlon/" target="_blank"><i class=" fa-brands fa-facebook-square fa-10x" style="font-size:20em; color: #345fa5;"></i></a>
+			<div class="container bg-white  position-relative shadow-5">
 
 
-  </div>
-              <div class="col-md-3 d-flex justify-content-center">
-              <div class="card bg-white m-2" style="max-height: 400px; max-width:250px; background: linear-gradient(#3f90cb,#345fa5);">
-                <div class="d-flex justify-content-center pt-5" >
-                  <img src="https://i.ibb.co/TgB4fhW/Photo-Room-20201119-212215.png" class="img-fluid"  style=" height:200px; width:200px; border-radius: 50%; "/>
-                    <a href="#!">
-                      
-                    </a>
-                </div>
-                <div class="card-body text-white p-2">
-                  <h5 class="card-title text-center">ANTONIO RIBEIRO</h5>
-                  <p class="card-text text-center">CO-PRÉSIDENT <br> PÔLE SPORTIF & COMMUNICATION <br> 06 14 72 24 30</p>
-                </div>
-              </div>
-              </div>
-              <div class="col-md-3 d-flex justify-content-center">
-              <div class="card bg-white m-2" style="max-height: 400px; max-width:250px;  background: linear-gradient(#3f90cb,#345fa5);">
-                  <div class="d-flex justify-content-center pt-5" >
-                      <img
-                      src="https://i.ibb.co/NFm9PXf/Photo-Room-20201118-072823.png"
-                      class=""  style=" height:200px; width:200px; border-radius: 50%; "
-                      />
-                      <a href="#!">
-                      
-                      </a>
-                  </div>
-                  <div class="card-body  text-white p-2">
-                      <h5 class="card-title text-center">STÉPHANE DUVAL</h5>
-                      <p class="card-text text-center">CO-PRESIDENT <br> PÔLE ADMINISTRATIF & FINANCIER <br> 06 07 23 95 45
-                      </p>
-                  </div>
-              </div>
-          </div>
-</div>
-<div class="row ps-5 pe-5 bg-white d-flex justify-content-start ">
-<div class="col-md-6 p-5">
-<iframe class="img-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2680.690749345217!2d3.5846609656368162!3d47.78744432919705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ee4f527ea66503%3A0x5954440fe8d54182!2sAssociation%20de%20la%20Jeunesse%20Auxerroise!5e0!3m2!1sfr!2sfr!4v1641818498367!5m2!1sfr!2sfr"    style="border:0; width: 37.5rem; height: 28.125em;" allowfullscreen="" loading="lazy"></iframe>
-</div>
-  <div class="col-md-6 p-5">
-  <h2 style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">par courrier</h2>
-  <p style="font-size: 1rem; color: #000;font-weight: 400;"> Section AJA TRIATHLON<br>83 Avenue Yver<br>BP 40324 <br>89005 AUXERRE Cedex</p>
-  <h2 style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">par email </h2>
+				<div class="row ps-5 pe-5 bg-white  ">
+					{% for message in app.flashes('message') %}
+						<div class="p-3 text-white rounded-2 bg-success mb-2 mt-2">{{ message }}</div>
+					{% endfor %}
+					<div class="col-md-6 text-center pt-5 rounded">
 
-    {{ form_start(form)}}
-      <input type="hidden" name="raison">
- <div> {{ form_label(form.email)}}<br>
-                        {{ form_widget(form.email)}}</div>
-       <div> {{ form_label(form.sujet)}}<br>
-                        {{ form_widget(form.sujet)}}</div>
-      <div class="pb-3"> {{ form_label(form.message)}}<br>
-                        {{ form_widget(form.message)}}</div>
+						<a href="https://www.facebook.com/ajatriathlon/" target="_blank">
+							<i class=" fa-brands fa-facebook-square fa-10x" style="font-size:20em; color: #345fa5;"></i>
+						</a>
 
 
-                        {{ form_widget(form.Envoyer)}}
-    {{ form_end(form)}}
-  </div>
-   <p class="text-center">Vos informations seront transmises à l'AJA TRIATHLON pour la gestion des contacts.<br>En aucun cas ces données ne seront cédées à des tiers.</p>
-</div>
+					</div>
+					<div class="col-md-3 d-flex justify-content-center">
+						<div class="card bg-white m-2" style="max-height: 400px; max-width:250px; background: linear-gradient(#3f90cb,#345fa5);">
+							<div class="d-flex justify-content-center pt-5">
+								<img src="https://i.ibb.co/TgB4fhW/Photo-Room-20201119-212215.png" class="img-fluid" style=" height:200px; width:200px; border-radius: 50%; "/>
+								<a href="#!"></a>
+							</div>
+							<div class="card-body text-white p-2">
+								<h5 class="card-title text-center">ANTONIO RIBEIRO</h5>
+								<p class="card-text text-center">CO-PRÉSIDENT
+									<br>
+									PÔLE SPORTIF & COMMUNICATION
+									<br>
+									06 14 72 24 30</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 d-flex justify-content-center">
+						<div class="card bg-white m-2" style="max-height: 400px; max-width:250px;  background: linear-gradient(#3f90cb,#345fa5);">
+							<div class="d-flex justify-content-center pt-5">
+								<img src="https://i.ibb.co/NFm9PXf/Photo-Room-20201118-072823.png" class="" style=" height:200px; width:200px; border-radius: 50%; "/>
+								<a href="#!"></a>
+							</div>
+							<div class="card-body  text-white p-2">
+								<h5 class="card-title text-center">STÉPHANE DUVAL</h5>
+								<p class="card-text text-center">CO-PRESIDENT
+									<br>
+									PÔLE ADMINISTRATIF & FINANCIER
+									<br>
+									06 07 23 95 45
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row ps-5 pe-5 bg-white d-flex justify-content-start ">
+					<div class="col-md-6 p-5">
+						<iframe class="img-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2680.690749345217!2d3.5846609656368162!3d47.78744432919705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ee4f527ea66503%3A0x5954440fe8d54182!2sAssociation%20de%20la%20Jeunesse%20Auxerroise!5e0!3m2!1sfr!2sfr!4v1641818498367!5m2!1sfr!2sfr" style="border:0; width: 37.5rem; height: 28.125em;" allowfullscreen="" loading="lazy"></iframe>
+					</div>
+					<div class="col-md-6 p-5">
+						<h2 style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">par courrier</h2>
+						<p style="font-size: 1rem; color: #000;font-weight: 400;">
+							Section AJA TRIATHLON<br>83 Avenue Yver<br>BP 40324
+							<br>89005 AUXERRE Cedex</p>
+						<h2 style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">par email
+						</h2>
 
-</div>
-</div>
-<div class="position-relative container mb-5" style="border-left: 1px solid grey;border-bottom: 1px solid grey;border-right: 1px solid grey; height: 50px; background-color: #fff;">
-</div>
-</div>
+						{{ form_start(form)}}
+						<input type="hidden" name="raison">
+						<div>
+							{{ form_label(form.email)}}<br>
+							{{ form_widget(form.email)}}</div>
+						<div>
+							{{ form_label(form.sujet)}}<br>
+							{{ form_widget(form.sujet)}}</div>
+						<div class="pb-3">
+							{{ form_label(form.message)}}<br>
+							{{ form_widget(form.message)}}</div>
+
+
+						{{ form_widget(form.Envoyer)}}
+						{{ form_end(form)}}
+					</div>
+					<p class="text-center">Vos informations seront transmises à l'AJA TRIATHLON pour la gestion des contacts.<br>En aucun cas ces données ne seront cédées à des tiers.</p>
+				</div>
+
+			</div>
+		</div>
+		<div class="position-relative container mb-5" style="border-left: 1px solid grey;border-bottom: 1px solid grey;border-right: 1px solid grey; height: 50px; background-color: #fff;"></div>
+	</div>
 
 {% endblock %}
