@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ContactController!
+{% block title %}Contact
 {% endblock %}
 
 {% block body %}
@@ -18,11 +18,11 @@
 		}
 	</style>
 	<div class="container-fluid pb-5 ps-0 pe-0" style="padding-top:100px;
-			                    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(https://images.pexels.com/photos/346734/pexels-photo-346734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center 80% fixed;
-			                -webkit-background-size: cover;
-			                -moz-background-size: cover;
-			                -o-background-size: cover;
-			                background-size: cover; ">
+									                    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(https://images.pexels.com/photos/346734/pexels-photo-346734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center 80% fixed;
+									                -webkit-background-size: cover;
+									                -moz-background-size: cover;
+									                -o-background-size: cover;
+									                background-size: cover; ">
 		<div class="row text-white text-center p-0 ms-0 me-0" style="margin-bottom:100px;">
 			<div class="col-md-2  mb-5" style="border-bottom: 3px solid #fff;"></div>
 			<div class="col-md-8">
@@ -98,31 +98,32 @@
 							<br>89005 AUXERRE Cedex</p>
 						<h2 class="mb-5" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">par email :
 						</h2>
-						<a class="" href="mailto:ajatriathlonauxerre@gmail.com":type="email" style="font-size: 1rem; color: #000;font-weight: 400;">
-							<button class="btn mb-5" style="color: #3576b7;">ajatriathlonauxerre@gmail.com</button></a>
-<!--
-						{{ form_start(form)}}
-						<input type="hidden" name="raison">
-						<div>
-							{{ form_label(form.email)}}<br>
-							{{ form_widget(form.email)}}</div>
-						<div>
-							{{ form_label(form.sujet)}}<br>
-							{{ form_widget(form.sujet)}}</div>
-						<div class="pb-3">
-							{{ form_label(form.message)}}<br>
-							{{ form_widget(form.message)}}</div>
+						<a class="" href="mailto:ajatriathlonauxerre@gmail.com" :type="email" style="font-size: 1rem; color: #000;font-weight: 400;">
+							<button class="btn mb-5" style="color: #3576b7;">ajatriathlonauxerre@gmail.com</button>
+						</a>
+						<!--
+																		{{ form_start(form)}}
+																		<input type="hidden" name="raison">
+																		<div>
+																			{{ form_label(form.email)}}<br>
+																			{{ form_widget(form.email)}}</div>
+																		<div>
+																			{{ form_label(form.sujet)}}<br>
+																			{{ form_widget(form.sujet)}}</div>
+																		<div class="pb-3">
+																			{{ form_label(form.message)}}<br>
+																			{{ form_widget(form.message)}}</div>
+												
+												
+																		{{ form_widget(form.Envoyer)}}
+																		{{ form_end(form)}}
+																	</div>-->
+						<p class="text-center pt-5">Vos informations seront transmises à l'AJA TRIATHLON pour la gestion des contacts.<br>En aucun cas ces données ne seront cédées à des tiers.</p>
+					</div>
 
-
-						{{ form_widget(form.Envoyer)}}
-						{{ form_end(form)}}
-					</div>-->
-					<p class="text-center pt-5">Vos informations seront transmises à l'AJA TRIATHLON pour la gestion des contacts.<br>En aucun cas ces données ne seront cédées à des tiers.</p>
 				</div>
-
 			</div>
+			<div class="position-relative container mb-5" style="border-left: 1px solid grey;border-bottom: 1px solid grey;border-right: 1px solid grey; height: 50px; background-color: #fff;"></div>
 		</div>
-		<div class="position-relative container mb-5" style="border-left: 1px solid grey;border-bottom: 1px solid grey;border-right: 1px solid grey; height: 50px; background-color: #fff;"></div>
 	</div>
-
 {% endblock %}
