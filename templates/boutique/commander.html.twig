@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello BoutiqueController!{% endblock %}
+{% block title %}Comment commander ?{% endblock %}
 
 {% block body %}
 <div class="container-fluid pb-5 ps-0 pe-0" style="padding-top:100px;
@@ -27,18 +27,19 @@
     <div class="container bg-white  position-relative shadow-5" >
         <div class="container text-dark ps-5  ">
                     <h4 class="text-uppercase pt-5" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">Notre boutique !<br><br></h4>
-            <p style="font-size: 1rem; color:black;font-weight: 800;">
+            <p style="font-size: 1rem; color:black;font-weight: 800; text-align: justify;">
            Découvrez les collections officielles du club de l’AJA TRIATHLON : de l’équipement dédié à la partie eau libre avec notre tri-fonction dernier cri et notre bonnet natation aux couleurs du club, en passant par la tenue vélo professionnelle complète (cuissard, veste été et hiver, chaussettes etc…) puis notre incontournable tee-shirt de course à pied avec son tour de cou et ses manchettes, vous trouverez sans peine, comme tout Triathlète qui se respecte, comment afficher vos couleurs aux yeux de tous lors de vos entrainements et compétitions sportives.
             </p>
 
             <h4 class="pt-5" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">Comment commander ?  <br><br></h4>
-            <p class="p-0 m-0" style="font-size: 1rem; color:black;font-weight: 800;">
+            <p class="p-0 m-0" style="font-size: 1rem; color:black;font-weight: 800; text-align: justify;">
            C’est simple !
 Nous ne vous proposerons pas de paiement direct en ligne mais juste la possibilité de choisir votre produit et votre taille dans notre boutique. 
 Le club s’occupe ensuite du reste. 
 Chaque trimestre nous enverrons une commande regroupant les choix recensés des adhérents auprès de nos fournisseurs.
 Vous serez ensuite alerté dès réception de votre produit pour venir le récupérer auprès du responsable en charge de la boutique et procéder à son règlement.
             </p>
+             <a  href="{{ path('natation_eau_libre') }}"><button class="btn  mb-2 mt-4" style="color: #3576b7;font-weight: 800;">Commander</button></a>
                 <div class="text-center bg-white">
               
                 </div>

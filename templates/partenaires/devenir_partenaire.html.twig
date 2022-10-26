@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello PartenairesController!{% endblock %}
+{% block title %}Devenir Partenaire{% endblock %}
 
 {% block body %}
 <style>
@@ -11,6 +11,13 @@
     left: -999em;
   }
 }
+
+  @media screen and (max-width: 800px) {
+  .imgpart{
+     display: none;
+  }
+  }
+
 </style>
 <div class="container-fluid pb-5 ps-0 pe-0" style="padding-top:100px;
                     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(https://i.ibb.co/5cnG4Jp/Whats-App-Image-2022-08-15-at-14-30-19.jpg) no-repeat center 20% fixed; 
@@ -26,7 +33,7 @@
         </div>
         <div class="col-md-2 mb-5" style="border-bottom: 3px solid #fff;"></div>
     </div>
-    <div class="position-relative container " style="border-top: 1px solid grey;border-left: 1px solid grey;border-right: 1px solid grey ;height: 80px; background-color: #FFF;">
+    <div class="position-relative container " style="border-top: 1px solid white;border-left: 1px solid white;border-right: 1px solid white ;height: 80px; background-color: #FFF;">
         <h2 class="text-center"style="font-size: 2rem; color: #3576b7;font-weight: 800;"> </h2>
     </div>
 
@@ -45,7 +52,7 @@
       <div>
         <h4 class="text-uppercase pt-2 pb-2" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">SE DEMARQUER :</h4>
         <h4 class="text" style="font-size: 1rem;  color: #3576b7; font-weight: 800;">Pour être différent des autres</h4>
-        <p style="font-size: 0.875rem; color:black;font-weight: 800;">
+        <p style="font-size: 0.875rem; color:black;font-weight: 800;  text-align: justify;">
         En mettant en valeur un sport émergent, attrayant, dynamique et moderne qui véhicule une très forte image de fair-play, de convivialité et d'esprit de famille.
         </p>
       </div>
@@ -62,7 +69,7 @@
       <div>
         <h4 class="text-uppercase pb-2" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">ASSURER :</h4>
         <h4 class="text" style="font-size: 1rem;  color: #3576b7; font-weight: 800;">Pour faire un long voyage ensemble</h4>
-        <p style="font-size: 0.875rem; color:black;font-weight: 800;">
+        <p style="font-size: 0.875rem; color:black;font-weight: 800;  text-align: justify;">
         En assurant un rayonnement national à notre club et votre entreprise.
         </p>
         </div>
@@ -77,7 +84,7 @@
       <div>
         <h4 class="text-uppercase pb-2" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">SOUTENIR :</h4>
         <h4 class="text" style="font-size: 1rem;  color: #3576b7; font-weight: 800;">POUR CONTRIBUER AU BIEN ÊTRE</h4>
-        <p style="font-size: 0.875rem; color:black;font-weight: 800;">
+        <p style="font-size: 0.875rem; color:black;font-weight: 800;  text-align: justify;">
         Et permettre de soutenir un sport Olympique de plus en plus populaire.
         </p>
         </div>
@@ -94,7 +101,7 @@
       <div>
         <h4 class="text-uppercase pb-2" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">ASSOCIER :</h4>
         <h4 class="text" style="font-size: 1rem;  color: #3576b7; font-weight: 800;">POUR VALORISER VOTRE MARQUE</h4>
-        <p style="font-size: 0.875rem; color:black;font-weight: 800;">
+        <p style="font-size: 0.875rem; color:black;font-weight: 800;  text-align: justify;">
         Et associer l'image de votre entreprise ou vos propres qualités humaines aux valeurs de notre Club.
         </p>
       </div>
@@ -109,7 +116,7 @@
       <div>
         <h4 class="text-uppercase pb-2" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">RAYONNER :</h4>
         <h4 class="text" style="font-size: 1rem;  color: #3576b7; font-weight: 800;">POUR IMAGINER L'AVENIR ENSEMBLE</h4>
-        <p style="font-size: 0.875rem; color:black;font-weight: 800;">
+        <p style="font-size: 0.875rem; color:black;font-weight: 800;  text-align: justify;">
         Et bénéficier d'une visibilité dans un club Omnisport et ses sections ayant une renommée nationale.
         </p>
       </div>
@@ -124,9 +131,9 @@
 <h3  class="text-center text-uppercase p-4"style="font-size: 1.125rem; color:black;font-weight: 800;">Unir nos responsabilités sociétales</h3>
 <div class="col-md-6 d-flex justify-content-center">
 <div class="d-flex">
-<img class="d-flex img img-fluid" src="https://i.ibb.co/3hNnyMy/developpement-durable-tri.jpg" alt="developpement-durable-tri" style="max-height:140px; width:auto;" border="0">
+<img class="imgpart" src="https://i.ibb.co/3hNnyMy/developpement-durable-tri.jpg" alt="developpement-durable-tri" style="max-height:140px; width:auto;" border="0">
 
-<p style="font-size: 0.875rem; color:black;font-weight: 800;"><font class="" style="font-size: 1rem;  color: #3576b7; font-weight: 800;"> AGIR POUR LA CONSTRUCTION D'UN MONDE ÉCORESPONSABLE<br><br></font>
+<p style="font-size: 0.875rem; color:black;font-weight: 800;"><font class="" style="font-size: 1rem;  color: #3576b7; font-weight: 800;  text-align: justify;"> AGIR POUR LA CONSTRUCTION D'UN MONDE ÉCORESPONSABLE<br><br></font>
 Le triathlon se pratique en milieu naturel, il s'adapte à son
 environnement tout en respectant des valeurs éco-responsables.
 Tout comme vous, nous agissons et nous sommes sensibles au respect de
@@ -136,8 +143,8 @@ l'environnement.</p>
 
 <div class="col-md-6 d-flex justify-content-center ">
 <div class="d-flex">
-<img class="d-flex img img-fluid" src="https://i.ibb.co/HngjVcq/SANTE-TRI.png" alt="developpement-durable-tri" style="max-height:140px; width:auto;" border="0">
-<p style="font-size: 0.875rem; color:black;font-weight: 800;"><font class="" style="font-size: 1rem;  color: #3576b7; font-weight: 800;">ENGAGER POUR LE BIEN ETRE DE LA POPULATION<br><br></font>
+<img class="imgpart" src="https://i.ibb.co/HngjVcq/SANTE-TRI.png" alt="developpement-durable-tri" style="max-height:140px; width:auto;" border="0">
+<p style="font-size: 0.875rem; color:black;font-weight: 800;  text-align: justify;"><font class="" style="font-size: 1rem;  color: #3576b7; font-weight: 800; ">ENGAGER POUR LE BIEN ETRE DE LA POPULATION<br><br></font>
 Le triathlon s'engage pour le bien être de tous ses pratiquants, son état
 d'esprit solidaire fait partie intégrante de son ADN.
 Tout comme vous, nous contribuons au bien être de la population en
@@ -150,8 +157,8 @@ offrant la possibilité à chacun d'évoluer à son rythme.</p>
 <div class="row p-3 ">
 <div class="col-md-6 d-flex justify-content-center">
 <div class="d-flex">
-<img class="d-flex img img-fluid" src="https://i.ibb.co/smPKv0X/LOGO-FFTRI.jpg" alt="developpement-durable-tri" style="max-height:140px; width:auto;" border="0">
-<p style="font-size: 0.875rem; color:black;font-weight: 800;"><font class="" style="font-size: 1rem;  color: #3576b7; font-weight: 800;">PORTER AVEC FIERTÉ NOTRE HISTOIRE<br><br></font>
+<img class="imgpart" src="https://i.ibb.co/smPKv0X/LOGO-FFTRI.jpg" alt="developpement-durable-tri" style="max-height:140px; width:auto;" border="0">
+<p style="font-size: 0.875rem; color:black;font-weight: 800;  text-align: justify;"><font class="" style="font-size: 1rem;  color: #3576b7; font-weight: 800;">PORTER AVEC FIERTÉ NOTRE HISTOIRE<br><br></font>
 Le triathlon est devenu un sport de plus en plus populaire qui exige une
 discipline stricte et une hygiène de vie saine, fier de ses origines il
 connait une croissance rapide.
@@ -162,9 +169,9 @@ portant avec fierté nos valeurs historiques.</p>
 
 <div class="col-md-6 d-flex justify-content-center ">
 <div class="d-flex">
-<img class="d-flex img img-fluid" src="https://i.ibb.co/QQfVVBC/f-minin-tri.jpg" alt="developpement-durable-tri" style="max-height:140px; width:auto;" border="0">
+<img class="imgpart" src="https://i.ibb.co/QQfVVBC/f-minin-tri.jpg" alt="developpement-durable-tri" style="max-height:140px; width:auto;" border="0">
 
-<p style="font-size: 0.875rem; color:black;font-weight: 800;"><font class="" style="font-size: 1rem;  color: #3576b7; font-weight: 800;">VALORISER NOS RESSOURCES & CULTIVER NOS TALENTS<br><br></font>
+<p style="font-size: 0.875rem; color:black;font-weight: 800;  text-align: justify;"><font class="" style="font-size: 1rem;  color: #3576b7; font-weight: 800;">VALORISER NOS RESSOURCES & CULTIVER NOS TALENTS<br><br></font>
 Le triathlon est un sport Olympique qui se partage, qui valorise la
 diversité et l'égalité des chances.
 Tout comme vous, nous permettons l'accès à la connaissance et aux
@@ -182,7 +189,7 @@ tous dans le respect de la diversité.</p>
 <h4 class="text-uppercase pb-2 text-center" style="font-size: 1.5rem; color: #3576b7;font-weight: 800;">DEUX FORMULES 
 DE PARTENARIATS
 POSSIBLES </h4>
-<p class="text-center" style="font-size: 0.875rem; color:black;font-weight: 800;">
+<p class="text-center" style="font-size: 0.875rem; color:black;font-weight: 800;  text-align: justify;">
 Nous vous proposons deux offres de partenariats possibles
 et vous fournissons des solutions globales pour répondre à
 tous vos besoins en matière de communication.<br> Nous vous
@@ -199,7 +206,7 @@ nationale que nous porterons avec fierté.
 <div class="p-4">
 <h4 class="text-uppercase pb-2" style="font-size: 1.125rem; color: #fff;font-weight: 800;">La durée de
 contrat</h4>
-<p style="font-size: 0.875rem; color:white;font-weight: 800;">
+<p style="font-size: 0.875rem; color:white;font-weight: 800;  text-align: justify;">
 Nous offrons une
 garantie de partenariat
 de 3 ans avec la
@@ -211,7 +218,7 @@ possibilité d'étaler vos
 <div class="col-md-3 p-4">
 <div class="p-4">
 <h4 class="text-uppercase pb-2" style="font-size: 1.125rem; color: #fff;font-weight: 800;">Les forfaits</h4>
-<p style="font-size: 0.875rem; color:white;font-weight: 800;">
+<p style="font-size: 0.875rem; color:white;font-weight: 800;  text-align: justify;">
 Nous vous proposons 
 5 forfaits mécène qui
 nous ressemblent. Du
@@ -224,7 +231,7 @@ celui qui vous convient !
 <div class="col-md-3 p-4">
 <div class="p-4">
 <h4 class="text-uppercase pb-2" style="font-size: 1.125rem; color: #fff;font-weight: 800;">La communication</h4>
-<p style="font-size: 0.875rem; color:white;font-weight: 800;">
+<p style="font-size: 0.875rem; color:white;font-weight: 800;  text-align: justify;">
 Avec nos 2 principaux supports de
 communication (banderoles ou &
 affiches puis réseaux sociaux &
@@ -236,7 +243,7 @@ vu.
 <div class="col-md-3 p-4">
 <div class="p-4">
 <h4 class="text-uppercase pb-2"style="font-size: 1.125rem; color: #fff;font-weight: 800;">Les avantages</h4>
-<p style="font-size: 0.875rem; color:white;font-weight: 800;">
+<p style="font-size: 0.875rem; color:white;font-weight: 800;  text-align: justify;">
 En plus des 60% de réduction d'impôt
 accordés par l'état pour votre don,
 nous vous offons la possibilité de
@@ -254,7 +261,7 @@ don.</p>
 <div class="p-4">
 <h4 class="text-uppercase pb-2" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">La durée de
 contrat</h4>
-<p style="font-size: 0.875rem; color:black;font-weight: 800;">
+<p style="font-size: 0.875rem; color:black;font-weight: 800;  text-align: justify;">
 Nous offrons une
 garantie de partenariat
 de 3 ans avec la
@@ -266,7 +273,7 @@ possibilité d'étaler vos
 <div class="col-md-3 p-4">
 <div class="p-4">
 <h4 class="text-uppercase pb-2" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">Le marquage</h4>
-<p style="font-size: 0.875rem; color:black;font-weight: 800;">
+<p style="font-size: 0.875rem; color:black;font-weight: 800;  text-align: justify;">
 Vous bénéficiez d'une
 multitude de choix de
 marquage sur 3
@@ -278,7 +285,7 @@ communication !
 <div class="col-md-3 p-4">
 <div class="p-4">
 <h4 class="text-uppercase pb-2"style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">Les thématiques</h4>
-<p style="font-size: 0.875rem; color:black;font-weight: 800;">
+<p style="font-size: 0.875rem; color:black;font-weight: 800;  text-align: justify;">
 Avec nos 3 principaux thèmes
 support de communication
 (Aquatique, cycliste, et course à
@@ -291,7 +298,7 @@ ressemble !
 <div class="col-md-3 p-4">
 <div class="p-4">
 <h4 class="text-uppercase pb-2" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">Les ajustables</h4>
-<p style="font-size: 0.875rem; color:black;font-weight: 800;">
+<p style="font-size: 0.875rem; color:black;font-weight: 800;  text-align: justify;">
 Avec la large gamme d'offres que
 nous vous proposons, vous pouvez
 choir l'option la plus ajustée à votre
@@ -304,7 +311,7 @@ budget actuel.
 </div>
 
  <h4 class="text-center text-uppercase pt-3 pb-2" style="font-size: 1.5rem; color: #3576b7;font-weight: 800;">DEVENEZ MAINTENANT NOTRE PARTENAIRE !</h4>
-<p class="text-center p-3"style="font-size: 0.875rem; color:black;font-weight: 800;">
+<p class="text-center p-3"style="font-size: 0.875rem; color:black;font-weight: 800;  text-align: justify;">
 Pour en savoir plus n'hésitez pas à nous contacter <a href="{{ path('nous_contacter') }}" ><u>ici</u></a> !<br>
 Nous sommes en mesure de vous aider à choisir la bonne formule et faire le bon choix ! 
 </p>
@@ -315,7 +322,7 @@ Nous sommes en mesure de vous aider à choisir la bonne formule et faire le bon 
 
 </div>
 </div>
-<div class="position-relative container mb-5" style="border-left: 1px solid grey;border-bottom: 1px solid grey;border-right: 1px solid grey; height: 50px; background-color: #fff;">
+<div class="position-relative container mb-5" style="border-left: 1px solid white;border-bottom: 1px solid white;border-right: 1px solid white; height: 50px; background-color: #fff;">
 </div>
 </div>
 
