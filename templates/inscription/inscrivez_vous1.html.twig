@@ -72,17 +72,31 @@
 CONTACT</h4>
 <p class=" p-3" style="font-size: 1.125rem; color: #000;font-weight: 800;">JE CONTACTE L'AJA TRIATHLON<br><br>Je demande mon livret d'accueil et le règlement intérieur de la section AJA TRIATHLON.</p>
 <!-- Modal -->
-<div class="d-flex justify-content-center">
-<h2 class="d-flex mt-2" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">par email :
+<div class="row d-flex justify-content-center">
+<h2 class=" mt-2" style="font-size: 1.125rem; color: #3576b7;font-weight: 800;">par email :
 						</h2>
-            <a class="ps-5 pb-5 d-flex text-center" href="mailto:ajatriathlonauxerre@gmail.com":type="email" style="font-size: 1rem; color: #000;font-weight: 400;">
-							<button class="btn btn-light mb-5">ajatriathlonauxerre@gmail.com</button></a>
+            <div class="col-md-10 d-flex justify-content-center">
+            <a class="btnaja text-center" href="mailto:ajatriathlonauxerre@gmail.com":type="email" style="font-size: 0.875em;; color: #000;font-weight: 400;">
+							<button  style="font-size: 1em;;" class="btn btn-light">ajatriathlonauxerre@gmail.com</button></a></div>
 <!--
                                     {{ form_start(form)}}
                                     <input type="hidden" name="raison">
                                     {{ form_end(form)}}-->
-</div>
-   </div>                        
+
+
+<style>
+  @media screen and (max-width: 800px) {
+.btnaja{
+    font-size: 10px!important;
+}
+}
+</style>
+<br>
+<div class="col-md-10 d-flex justify-content-center mt-4">
+<a href="{{ path('inscrivez_vous2') }}"><button type="button" class="btn ms-2 text-white text-uppercase" style="font-size: 1rem; background-color: #3576b7;font-weight: 800;">étape suivante</button></a>
+   </div>   
+   </div>
+   </div>                     
 </div>
 </div>
 </div>
