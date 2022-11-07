@@ -3,9 +3,11 @@
 namespace App\Controller;
 
 use App\Entity\Media;
+use App\Repository\MediaRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
+
 
 class MediaController extends AbstractController
 {
@@ -19,17 +21,31 @@ class MediaController extends AbstractController
         ]);
     }
 
+
      /**
      * @Route("/media/photo", name="photo")
      */
-    public function photo()
+    public function photo(Request $request)
     {
 
         $media = $this->getDoctrine()->getRepository(Media::class)->findBy(["categorie"=>"Photos"]);
         return $this->render('media/photo.html.twig', [
             'media' => $media,
         ]);
-    } 
+    }  
+         /**
+     * @Route("/media/photo/details/{id}", name="details")
+     */
+    public function details($id, MediaRepository $mediarepo, Request $request)
+    {
+
+        $media = $mediarepo->findOneBy(['id' => $id]);
+
+
+        return $this->render('media/details.html.twig', [
+            'media' => $media,
+        ]);
+    }
 
      /**
      * @Route("/media/video", name="video")

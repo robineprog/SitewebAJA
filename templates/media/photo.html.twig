@@ -25,14 +25,20 @@
 <div class="container" style="padding-left: 20%; padding-right: 20%;">
   <div class="row text-center text-lg-start d-flex ">
  	{% for media in media %}
-  <div><h2 class="text-center" style="color: #3576b7; font-weight: 800;">{{ media.titre }}</h2>
+
+
+    <div class="col-md-4 d-flex justify-content-center align-items-center text-center p-0 m-0 flex-column pb-5" style="widht:200px; height:auto;">
+      <div>
+  <h2 class="text-center" style="color: #3576b7; font-weight: 800;">{{ media.titre }}</h2>
   </div>
-           	{% for media in media.images %}
-    <div class="col-md-4 d-flex justify-content-center align-items-center text-center p-0 m-0" style="widht:200px; height:auto;">
- <a  class="shadow-3-strong rounded mb-4" href="{{ asset('/uploads/'~media.name) }}" data-lightbox="roadtrip"><img src="{{ asset('/uploads/'~media.name) }}" class="example-image img-thumbnail" style="max-width:200px; height:auto;">
+    <div class="d-flex justif-content-center">
+ <a  class="shadow-3-strong rounded mb-4" href="{{ asset('/uploads/'~media.images[0].name) }}" data-lightbox="roadtrip" ><img src="{{ asset('/uploads/'~media.images[0].name) }}" class="example-image img-thumbnail" style="max-width:200px; height:auto;">
  </a>
     </div>
-   {% endfor %}
+    <div>
+    <a href="{{ path("details", {id: media.id}) }}" class="btn text-white" style="background-color: #3576b7;font-weight: 800;">Tout voir</a>
+    </div>
+</div>
             {% endfor %}
 </div>
   </div>
